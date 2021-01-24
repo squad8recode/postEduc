@@ -1,10 +1,13 @@
 import React from 'react';
 
-import {Container, Row, Col, Button} from 'react-bootstrap'
+import {Container, Row, Col, Button, Image} from 'react-bootstrap'
 
 import Detalhes from './Detalhes'
 import InfosEvento from './InfosEvento'
 import Descricao from './Descricao'
+import Facebook from '../../Img/icone_face.png'
+import Insta from '../../Img/icone_insta.png'
+import Whats from '../../Img/icone_whats.png'
 
 export default class EventoEspecifico extends React.Component{
 
@@ -30,7 +33,7 @@ export default class EventoEspecifico extends React.Component{
       <Container fluid>
         <Container fluid>
           <Row>
-            <Col className="center column">
+            <Col className="right column">
             {this.state.db && this.state.db.map( 
                   infosEvento => (
               <InfosEvento 
@@ -42,7 +45,24 @@ export default class EventoEspecifico extends React.Component{
               />
                   )
               )}
-              <p>Compartilhar</p>
+              <Container fluid >
+                <Row className="justify-content-end">
+                  <h8>Compartilhar: </h8>
+                  <Button variant="white" className="float-right" >
+                  <Image src={Facebook}>
+                  </Image>
+                  </Button>
+                  <Button variant="white" className="float-right" >
+                  <Image src={Insta}>
+                  </Image>
+                  </Button>
+                  <Button variant="white" className="float-right" >
+                  <Image src={Whats}>
+                  </Image>
+                  </Button>
+                </Row>
+                <br></br>
+              </Container>
               </Col>
             
             <Col className="p-5">
@@ -95,5 +115,4 @@ export default class EventoEspecifico extends React.Component{
   }
   }
 }
-
 
