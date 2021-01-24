@@ -106,7 +106,7 @@ class Online extends React.Component{
             <Form.Row>
               <Col sm={12} md={6} lg={4}>
                 <Form.Group>
-                  <Form.Label  >Qual a carga horaria do curso: </Form.Label>
+                  <Form.Label  >Qual a carga horária do curso: </Form.Label>
                     <Form.Control  type="text" name="carga_horaria"/>
                 </Form.Group>
               </Col>
@@ -137,7 +137,7 @@ class Online extends React.Component{
 
               <Col sm={12} md={6} lg={4}>
                 <Form.Group>
-                  <Form.Label >Horario: </Form.Label>
+                  <Form.Label >Horário: </Form.Label>
                     <Form.Control type="time" name="hora_evento"/>
                 </Form.Group>
               </Col>
