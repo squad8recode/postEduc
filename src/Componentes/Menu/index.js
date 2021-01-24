@@ -130,6 +130,9 @@ class Menu extends React.Component{
                             <Nav.Item>
                                 <Nav.Link as={Link} to="/EventosUser">Seus Eventos</Nav.Link> 
                             </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link as={Link} to="/VerificaSugestao">Verificar Sugestões</Nav.Link> 
+                            </Nav.Item>
                         </Nav>
                         
                         <Nav className="ml-auto">

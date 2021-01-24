@@ -204,7 +204,7 @@ export default class EditaPresencial extends React.Component{
               <Col sm={12} md={6} lg={4}>
                 <Form.Group>
                   <Form.Label  >Qual a carga horaria do curso: </Form.Label>
-                    <Form.Control  type="number" name="carga_horaria" value={this.state.carga_horaria} onChange={this.alterapadrao}/>
+                    <Form.Control  type="text" name="carga_horaria" value={this.state.carga_horaria} onChange={this.alterapadrao}/>
                 </Form.Group>
               </Col>
 
