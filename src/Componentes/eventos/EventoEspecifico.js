@@ -78,7 +78,7 @@ export default class EventoEspecifico extends React.Component{
                       cep={detalhes.cep}
                       estado={detalhes.estado}
                       cidade={detalhes.cidade}
-
+                      modalidade={detalhes.modalidade}
                       nome={detalhes.nome_evento}
                       data={detalhes.data_evento}
                       hora={detalhes.hora_evento}

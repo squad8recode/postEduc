@@ -106,7 +106,10 @@ class Online extends React.Component{
             <Form.Row>
               <Col sm={12} md={6} lg={4}>
                 <Form.Group>
+
+
                   <Form.Label  >Qual a carga horária do curso: </Form.Label>
+
                     <Form.Control  type="text" name="carga_horaria"/>
                 </Form.Group>
               </Col>
