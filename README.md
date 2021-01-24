@@ -30,13 +30,13 @@ ___
 
 ## Como baixar o projeto e instalar as dependências.
 
-######Clonar o repositório
+###### Clonar o repositório
 `$ git clone https://github.com/squad8recode/postEduc.git`
-######Entrar no diretório
+###### Entrar no diretório
 `$ cd postEduc`
-######Instalar dependencias
+###### Instalar dependencias
 `$ npm install`
-######Iniciar projeto
+###### Iniciar projeto
 `$ npm start`
 ___
 ## Novidades desta versão:
