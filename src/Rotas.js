@@ -7,12 +7,12 @@ import CadastroEvento from './Componentes/eventos/criarEvento/CadastroEvento'
 import CadastroUsuario from './Componentes/CadastroUsuario/CadastroUsuario'
 import Login from './Componentes/Login/Login'
 import Sobre from './Paginas/Sobre'
-import VerificaEvento from './Componentes/admin/VerificaEvento'
-import Denuncias from './Componentes/admin/Denuncias'
+import VerificaEvento from './Componentes/admin/aprovar/VerificaEvento'
+import Denuncias from './Componentes/admin/denuncias/Denuncias'
 import TodosEventos from './Componentes/eventos/Todos'
 import Categorias from './Componentes/eventos/categorias'
 
-
+import VerificaSugestao from './Componentes/admin/sugestoes/VerificaSugestao'
 import EventosUser from './Componentes/eventos/editar/EventosUser'
 import EditarEvento from './Componentes/eventos/editar/editarEvento/edicao'
 
@@ -36,9 +36,10 @@ export class Rotas extends React.Component{
 
                 <Route exact path="/Categorias" component={Categorias}/>
 
-                <Route exact path="/categorias" component={Categorias}/>
                 <Route exact path="/EventosUser" component={EventosUser}/>
                 <Route exact path="/EditarEvento:id" component={EditarEvento}/>
+                <Route exact path="/VerificaSugestao" component={VerificaSugestao}/>
+                
 
             
             </Switch>
