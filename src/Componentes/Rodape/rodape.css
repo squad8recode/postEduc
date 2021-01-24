@@ -1,0 +1,27 @@
+ul li a{
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+div a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+div a:hover {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+.rodape{
+    background-color: #504456;
+    font-weight: bold;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+p{
+  font-weight: bold;
+}
+
+.lista{
+  list-style: none;
+}
+
+.margin{
+  margin: 5px 30px 5px 30px;
+}
+
+.flex{
+  display: flex;
+}
+
+.fwrap{
+  flex-wrap: wrap;
+}
+
+.bet{
+  justify-content: space-evenly;
+}
+
+.altura{
+  height: 50px;
+  padding:13px 80px 0px 80px;
+}
+
+.cartao{
+  border: 1px solid black;
+  margin:5px;
+  padding: 3px;
+  width: 400px;
+}
+.cartao p {
+  margin: 15px;
+}
+
+.card{
+  width: 300px;
+  height: 210px;
+  padding: 10px 25px 10px 25px;
+  border: 1px solid rgb(51, 3, 51);
+}
+
+.borda{
+  border: 1px solid rgb(51, 3, 51);
+}
+
+.cor{
+  color: rgb(90, 17, 90);
+}
+
+.center{
+  text-align: center;
+}
+
+.informacoes{
+  background-color: rgba(80, 68, 86, .9);
+  color: #fff; 
+  border-radius: 15px;
+  padding: 30px 30px 30px 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info{
+  padding: 15px 0px 15px 0px;
+}
+
+.ini{
+  
+  color: blue;
+}
+
+.ini:hover{
+  color: blue;
+}
+
+.h{
+  height: 250px;
+  padding-top: 20px;
+}
+
+h1.sobre{
+  color:rgba(224,235,243,0.8);
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+p.sobre{
+  font-size: 30px;
+  color:rgba(224,235,243);
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  opacity: 0.8;
+}
+
+.bgImagem{
+  opacity: 0.7;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bgImagem:hover{
+  opacity: 1.0;
+}
+
+.sobreObjetivo{
+  text-align: center;
+
+}
+
+p.sobreObjetivo{
+  text-align: justify;
+
+}
+
+p.sobreObjetivo{
+  font-size: 25px;
+  margin: 22px auto;
+  max-width: 700px;
+}
+

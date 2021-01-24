@@ -1,0 +1,16 @@
+Instrução de instalação e execução do projeto PostEduc:
+
+* Realizar o git clone do projeto: https://github.com/squad8recode/postEduc.git
+
+Dentro do diretório do projeto, executar o npm install para instalar as dependências.
+
+Executar o comando npm start.
+
+
+Observações:
+
+As conexões com o banco de dados e back-end PHP já estão configurados e alocados em um servidor mysql e Apache remoto (nuvem AWS). Ou seja, não há necessidade de configurações adicionais para esses acesssos.
+
+Uma cópia do script do banco de dados encontra-se no diretório /src/BancoDeDados/
+
+Uma cópia dos arquivos PHP estão no diretório /php/

@@ -1,0 +1,25 @@
+#flex {
+    display: flex;
+    flex-direction: column;
+}
+
+h3, h5 {
+    margin-left: 16px;
+    padding-top: 30px;
+}
+
+.badge {
+    background-color: #0068c8;
+}
+
+.badge-pill {
+    margin-top: 8px;
+}
+
+.nav-link {
+    color:white;
+}
+
+.nav-link.active {
+    color:rgb(253, 255, 144);
+}
