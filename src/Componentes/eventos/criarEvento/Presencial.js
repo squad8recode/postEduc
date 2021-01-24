@@ -121,7 +121,7 @@ class Presencial extends React.Component{
               <Col sm={12} md={6} lg={4}>
                 <Form.Group>
                   <Form.Label  >Qual a carga horaria do curso: </Form.Label>
-                    <Form.Control  type="number" name="carga_horaria"/>
+                    <Form.Control  type="text" name="carga_horaria"/>
                 </Form.Group>
               </Col>
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Averificar from './Averificar'
-import {Row, Col} from 'react-bootstrap'
+import {Container, Col,Row} from 'react-bootstrap'
 import { connect } from 'react-redux';
-import NaoTemPermissao from '../Modal/naoTemPermissao'
+import NaoTemPermissao from '../../Modal/naoTemPermissao'
 
  class VerificaEvento extends React.Component{
   constructor(props){
@@ -28,20 +28,20 @@ import NaoTemPermissao from '../Modal/naoTemPermissao'
       return <NaoTemPermissao/>
     }else{
       return(
-        <Row>
-          
+        <Container>
+          <Row>
             {this.state.eventos && this.state.eventos.map(item => (
-              <Col>
+              <Col key={item.id_evento}>
                 <Averificar
-                  key={item.id_evento}
                   id={item.id_evento}
                   nome_evento = {item.nome_evento}
                   data_postagem = {item.data_postagem}
+                  imagem  = {item.imagem}
                 /> 
               </Col>
             ))}
-          
-        </Row>
+          </Row>
+        </Container>
       )
     }
   }
