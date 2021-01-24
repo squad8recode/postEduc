@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Card} from 'react-bootstrap'
+import {Card, Row, Col, Button} from 'react-bootstrap'
 
 import foto from '../../fotos/ideia.jpg'
 
@@ -11,10 +11,14 @@ export default class Minicategoria extends React.Component{
     return(
       <Card className="card h my-2">
         <Card.Img variant="top" src={foto} width="250" height="160" />
-        <Card.Body className="flex bet ">
-          <Card.Title>Categoria</Card.Title>
-          <Card.Link href="#" className="ini">+ Info</Card.Link>
-        </Card.Body>
+        <Row>
+          <Card.Body as={Row}>
+            <Card.Title as={Col}>Categoria</Card.Title>
+            <Card.Link href="#" className="ini">
+              <Button variant="success" size="sm">+ Info</Button>
+            </Card.Link>
+          </Card.Body>
+        </Row>
       </Card>
     )
   }

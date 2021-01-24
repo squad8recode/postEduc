@@ -80,12 +80,12 @@ class Login extends React.Component{
                             <Col sm={12} md={{span: 6, offset: 3}} lg={{offset:4, span:4}}>
                             <Form.Group>
                                 <Form.Label>Nome de usuário</Form.Label>
-                                <Form.Control onChange={this.alteracao_user} type="text" id="nome_usuario" name="nome_usuario" placeholder="Entre com o seu nome de usuário" />
+                                <Form.Control onChange={this.alteracao_user} type="text" id="nome_usuario" name="nome_usuario" placeholder="Entre com o seu nome de usuário" required/>
                             </Form.Group>
 
                             <Form.Group>
                                 <Form.Label>Senha</Form.Label>
-                                <Form.Control onChange={this.alteracao_senha} type="password" id="senha" name="senha" placeholder="Entre com sua senha" />
+                                <Form.Control onChange={this.alteracao_senha} type="password" id="senha" name="senha" placeholder="Entre com sua senha" required/>
                             </Form.Group>
 
                             <Button variant="primary" type="submit">Entrar</Button>
