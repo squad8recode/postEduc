@@ -98,9 +98,8 @@ class Denuncia extends React.Component {
 
 		return (
 			<>
-				<Button variant="white" className="float-right" onClick={this.handleShow}>
-					<Image src={denuncia}>
-					</Image>
+				<Button variant="white" className="float" onClick={this.handleShow}>
+					<Image src={denuncia}></Image> Denunciar
 				</Button>
 
 				<Modal show={this.state.show} onHide={this.handleClose}>

@@ -25,10 +25,13 @@ class Detalhes extends React.Component{
                 <p className="pt-5">Cidade:{this.props.cidade} | Estado:{this.props.estado} | Bairro {this.props.bairro}</p>
                 <p className="pt-5">Local: {this.props.logradouro}, {this.props.numero}, {this.props.complemento}</p>
 
-                <p>Quando: {this.props.data} às {this.props.hora}</p>
-                <p>Duração: {this.props.carga}</p>
-                <Button as={Link} to={`/EditarEvento${this.props.id}`} >Editar</Button>
-                <Denuncia id={this.props.id}/>
+
+                <p>Quando: {this.props.data} - {this.props.hora_evento}</p>
+                <p>Duração: {this.props.carga_horaria}</p>
+                <Button variant="outline-info" as={Link} to={`/EditarEvento${this.props.id}`} >Editar</Button>
+                {/*<Denuncia id={this.props.id}/> */}
+                <br></br>
+
                 </div>
                 )
         }
@@ -39,8 +42,11 @@ class Detalhes extends React.Component{
             <p className="pt-5">{this.props.complemento},{this.props.cidade},{this.props.estado}</p>
 
             <p>Quando: {this.props.data} - {this.props.hora_evento}</p>
-            <p>Duração: {this.props.carga}</p>
-            <Denuncia id={this.props.id}/>
+
+            <p>Duração: {this.props.carga_horaria}</p>
+            {/*<Denuncia id={this.props.id}/>*/}
+            <br></br>
+
             </div>
         )
     }

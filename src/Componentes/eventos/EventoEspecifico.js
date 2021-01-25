@@ -33,7 +33,7 @@ export default class EventoEspecifico extends React.Component{
       <Container fluid>
         <Container fluid>
           <Row>
-            <Col className="right column">
+            <Col className="center column sm-auto xs-auto md-auto lg-auto xl-auto ">
             {this.state.db && this.state.db.map( 
                   infosEvento => (
               <InfosEvento 
@@ -45,8 +45,8 @@ export default class EventoEspecifico extends React.Component{
               />
                   )
               )}
-              <Container fluid >
-                <Row className="justify-content-end">
+              <Container >
+                <Row className="justify-content-center">
                   <h8>Compartilhar: </h8>
                   <Button variant="white" className="float-right" >
                   <Image src={Facebook}>
@@ -89,7 +89,7 @@ export default class EventoEspecifico extends React.Component{
                   )
             )} 
 
-
+              <br></br>
               <Button> Participar </Button>
               
               
