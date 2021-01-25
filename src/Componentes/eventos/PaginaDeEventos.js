@@ -60,10 +60,10 @@ componentDidMount(){
 
         <div className="flex bet margin fwrap">
         
-          <Minicategoria/>
-          <Minicategoria/>
-          <Minicategoria/>
-          <Minicategoria/>
+          <Minicategoria categoria = 'Musica' imagem = 'musica.jpg'/>
+          <Minicategoria categoria = 'Matematica' imagem = 'matematica.jpg'/>
+          <Minicategoria categoria = 'Desenho' imagem = 'desenho.jpg'/>
+          <Minicategoria categoria = 'Palestra' imagem = 'palestra.jpg'/>
           
         </div>
 
