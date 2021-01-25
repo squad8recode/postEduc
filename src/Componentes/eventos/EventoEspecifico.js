@@ -33,7 +33,7 @@ export default class EventoEspecifico extends React.Component{
       <Container fluid>
         <Container fluid>
           <Row>
-            <Col className="center column sm-auto xs-auto md-auto lg-auto xl-auto ">
+            <Col  sm={12} md={8}  lg={8} xl={6}className="center column sm-auto xs-auto md-auto lg-auto xl-auto ">
             {this.state.db && this.state.db.map( 
                   infosEvento => (
               <InfosEvento 
@@ -61,11 +61,11 @@ export default class EventoEspecifico extends React.Component{
                   </Image>
                   </Button>
                 </Row>
-                <br></br>
+                
               </Container>
               </Col>
             
-            <Col className="p-5">
+            <Col sm={12} md={4} lg={4} xl={6}className="p-5">
  
             {this.state.db && this.state.db.map( 
                   detalhes => (
@@ -84,20 +84,16 @@ export default class EventoEspecifico extends React.Component{
                       hora={detalhes.hora_evento}
                       carga={detalhes.carga_horaria}
                       criador = {detalhes.criador_evento}
-                      id = {detalhes.id_evento}
+                      link = {detalhes.link}
+                      
                     />
                   )
             )} 
-
-              <br></br>
-              <Button> Participar </Button>
-              
-              
             </Col>
           </Row>
         </Container>
 
-        <Container >
+        <Container className="mt-5">
                
           {this.state.db && this.state.db.map( 
             descricao => (
@@ -106,6 +102,7 @@ export default class EventoEspecifico extends React.Component{
                 descricao={descricao.descricao}
                 organizadores={descricao.organizadores}
                 telefone={descricao.telefone}
+                id = {descricao.id_evento}
               />
             ))}
               

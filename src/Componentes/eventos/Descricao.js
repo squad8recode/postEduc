@@ -12,7 +12,8 @@ export default class Descricao extends React.Component{
                     <p>{this.props.descricao}</p>
                 </Tab>
                 <Tab eventKey="Organizadores" title="Organizadores" style={{color:'black'}}>
-                    <p>{this.props.organizadores} - {this.props.telefone}</p>
+                    <p>Organizadores: {this.props.organizadores}</p> 
+                    <p>Telefone: {this.props.telefone}</p>
                 </Tab>
                 <Tab eventKey="Denuncica" title="..." style={{color:'black'}}>
                     <Denuncia id={this.props.id}/>
