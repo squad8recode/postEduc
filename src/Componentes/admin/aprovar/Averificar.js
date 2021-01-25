@@ -28,8 +28,11 @@ export default class Averificar extends React.Component{
   }
 
   render(){
+    const css = {
+      width: '18rem', height:'18rem', overflow:'auto'
+    }
     return(
-      <Card className="mt-5 mb-5" style={{ width: '18rem', height:'18rem'}}>
+      <Card className="mt-5 mb-5" style={css}>
         <Card.Body>
             <Card.Img variant="top" src={`http://52.67.245.155/php/img/${this.props.imagem}`} height="100px"/>
             <Card.Title className="mt-2"> {this.props.nome_evento}</Card.Title>

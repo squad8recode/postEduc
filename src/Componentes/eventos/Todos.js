@@ -1,7 +1,7 @@
 import React from 'react'
 import Minievento from './Minievento'
+import { Container, Row} from 'react-bootstrap'
 
-import '../../css/index.css'
 
 export default class TodosEventos extends React.Component{
   constructor(props){
@@ -21,17 +21,20 @@ export default class TodosEventos extends React.Component{
   render(){
     return(
       
-        <div className="flex bet margin fwrap">
+      <Container fluid>
+        <Row className="mx-5">
           {this.state.eventos && this.state.eventos.map(even => (
-              <Minievento 
+            
+              <Minievento  
                 key={even.id_evento}
                 id={even.id_evento}  
                 imagem={even.imagem} 
                 nome={even.nome_evento}
               />
+            
           ))}
-        </div>
-      
+        </Row>
+      </Container>
     )
   }
 }
