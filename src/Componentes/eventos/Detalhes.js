@@ -26,8 +26,9 @@ class Detalhes extends React.Component{
 
                 <p>Quando: {this.props.data} - {this.props.hora_evento}</p>
                 <p>Duração: {this.props.carga_horaria}</p>
-                <Button as={Link} to={`/EditarEvento${this.props.id}`} >Editar</Button>
-                <Denuncia id={this.props.id}/>
+                <Button variant="outline-info" as={Link} to={`/EditarEvento${this.props.id}`} >Editar</Button>
+                {/*<Denuncia id={this.props.id}/> */}
+                <br></br>
                 </div>
                 )
         }
@@ -39,7 +40,8 @@ class Detalhes extends React.Component{
 
             <p>Quando: {this.props.data} - {this.props.hora_evento}</p>
             <p>Duração: {this.props.carga_horaria}</p>
-            <Denuncia id={this.props.id}/>
+            {/*<Denuncia id={this.props.id}/>*/}
+            <br></br>
             </div>
         )
     }

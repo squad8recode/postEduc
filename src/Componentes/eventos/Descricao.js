@@ -1,5 +1,6 @@
 import React from 'react';
 import {Tabs, Tab} from 'react-bootstrap'
+import Denuncia from '../Modal/Denuncia'
 import '../eventos/descricao.css'
 
 export default class Descricao extends React.Component{
@@ -12,6 +13,9 @@ export default class Descricao extends React.Component{
                 </Tab>
                 <Tab eventKey="Organizadores" title="Organizadores" style={{color:'black'}}>
                     <p>{this.props.organizadores} - {this.props.telefone}</p>
+                </Tab>
+                <Tab eventKey="Denuncica" title="..." style={{color:'black'}}>
+                    <Denuncia id={this.props.id}/>
                 </Tab>
             </Tabs>
 

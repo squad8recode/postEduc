@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from 'react-bootstrap'
 import Pop from '../Popover/PopoverEventoEspecifico'
 
 export default class InfosEvento extends React.Component{
@@ -10,6 +11,7 @@ export default class InfosEvento extends React.Component{
     
                     <Pop/>
                     <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="600px" height="400px"/>
+                    <br />
                     <h8>Postado dia: {this.props.data} às {this.props.hora}</h8>
                 </div>
             );
