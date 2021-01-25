@@ -46,7 +46,7 @@ p{
 .card{
   width: 300px;
   height: 210px;
-  padding: 10px 25px 10px 25px;
+  padding: 0px 25px 10px 25px;
   border: 1px solid rgb(51, 3, 51);
 }
 
@@ -85,8 +85,13 @@ p{
 }
 
 .h{
+  height: 300px;
+  padding-top: 8px;
+}
+
+.hei{
   height: 250px;
-  padding-top: 20px;
+  padding-top: 8px;
 }
 
 h1.sobre{

@@ -40,6 +40,7 @@ componentDidMount(){
                             id={arrayevento.id_evento}  
                             imagem={arrayevento.imagem} 
                             nome={arrayevento.nome_evento}
+                            modalidade = {arrayevento.modalidade}
                 />
             ))}
          
