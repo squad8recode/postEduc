@@ -1,7 +1,7 @@
 import React from 'react'
 import Denuncia from './Denuncia'
 import { connect } from 'react-redux';
-import NaoTemPermissao from '../Modal/naoTemPermissao'
+import NaoTemPermissao from '../../Modal/naoTemPermissao'
 
  class Denuncias extends React.Component{
   constructor(props){

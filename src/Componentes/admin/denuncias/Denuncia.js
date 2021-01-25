@@ -21,11 +21,12 @@ export default class Denuncia extends React.Component{
     }
 
     await fetch(url,cabecalho)
+    window.location.reload();
   }
   
   render(){
     return(
-      <div className='cartao'>
+      <div className='cartao mt-5 mb-5'>
         <p>Denuncia n°{this.props.id}</p>
         <p>data denuncia: {this.props.data}</p>
         
@@ -40,7 +41,7 @@ export default class Denuncia extends React.Component{
         <p>Tipo de denuncia: {this.props.tipo_denuncia}</p>
         
         <p>Denuncia: {this.props.denuncia}</p>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center mb-2">
 
           <Form onSubmit={this.Deletar} className="mr-3" >
             <Form.Control type="hidden" name="id_evento" defaultValue={this.props.id_evento}/>
