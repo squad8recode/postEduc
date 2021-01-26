@@ -16,7 +16,7 @@ export default class Averificar extends React.Component{
   
   async darCertificacao(event){
     event.preventDefault()
-    const url = "http://18.228.15.53/php/verificado.php"
+    const url = "http://52.67.245.155/php/verificado.php"
     const dados = new FormData(event.target)
     const cabecalho = {
       method:"POST",

@@ -31,7 +31,7 @@ class SemiPresencial extends React.Component{
 
   async enviarEvento(event){
     event.preventDefault()
-    const url = "http://18.228.15.53/php/cadaseven.php"  
+    const url = "http://52.67.245.155/php/cadaseven.php"  
     const dados = new FormData(event.target)
     const cabecalho = {
       method:"POST",

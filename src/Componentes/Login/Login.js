@@ -45,7 +45,7 @@ class Login extends React.Component{
     async Envio(evento){
         evento.preventDefault()
     
-        const url = "http://18.228.15.53/php/login.php"
+        const url = "http://52.67.245.155/php/login.php"
         const dados = new FormData(evento.target)
         const cabecalho = {
             method: "POST", 

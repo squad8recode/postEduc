@@ -26,7 +26,7 @@ export default class Edicao extends React.Component{
   }
 
   componentDidMount(){
-    fetch(`http://18.228.15.53/php/select.php?id=${this.props.match.params.id}`)
+    fetch(`http://52.67.245.155/php/select.php?id=${this.props.match.params.id}`)
     .then(resposta => resposta.json())
     .then(resposta => this.setState({'dados':resposta}))
     

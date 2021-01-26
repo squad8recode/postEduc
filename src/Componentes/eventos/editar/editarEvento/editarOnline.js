@@ -108,7 +108,7 @@ export default class EditaOnline extends React.Component{
 
   async editarEvento(event){
     event.preventDefault()
-    const url = "http://18.228.15.53/php/atualizaevento.php"
+    const url = "http://52.67.245.155/php/atualizaevento.php"
     const dados = new FormData(event.target)
     const cabecalho = {
       method:"POST",

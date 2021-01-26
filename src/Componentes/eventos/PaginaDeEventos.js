@@ -17,7 +17,7 @@ constructor(props){
 }
 
 componentDidMount(){
-  fetch("http://18.228.15.53/php/carrousel.php")
+  fetch("http://52.67.245.155/php/carrousel.php")
   .then( response => response.json())
   .then(responseJson => this.setState({'db': responseJson}));
 }

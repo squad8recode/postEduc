@@ -73,7 +73,7 @@ class Denuncia extends React.Component {
 
 	async enviarDenuncia(event){
     event.preventDefault()
-    const url = "http://18.228.15.53/php/enviadenuncia.php"
+    const url = "http://52.67.245.155/php/enviadenuncia.php"
     const dados = new FormData(event.target)
     const cabecalho = {
       method:"POST",
