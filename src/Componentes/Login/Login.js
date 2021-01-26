@@ -45,7 +45,7 @@ class Login extends React.Component{
     async Envio(evento){
         evento.preventDefault()
     
-        const url = "https://phpback.ddns.net/login.php"
+        const url = "http://18.228.15.53/php/login.php"
         const dados = new FormData(evento.target)
         const cabecalho = {
             method: "POST", 
@@ -58,9 +58,11 @@ class Login extends React.Component{
             'id':dadosbd[0].id_usuario,
             'nome':dadosbd[0].nome,
          })
+        
          
         const { NomeLogin,IdLogin } = this.props
         
+        // NomeLogin(this.state.nome)
         NomeLogin(this.state.nome)
         IdLogin(this.state.id)
 

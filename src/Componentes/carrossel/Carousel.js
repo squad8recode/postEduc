@@ -17,7 +17,7 @@ export default class Caroussel extends React.Component{
 
   componentDidMount(){
     
-    fetch('https://phpback.ddns.net/carrousel.php')
+    fetch('http://18.228.15.53/php/carrousel.php')
     .then(res => res.json())
     .then(resJson => this.setState({'events':resJson}))
    
@@ -36,7 +36,7 @@ export default class Caroussel extends React.Component{
                   <img
                   
                   className="d-block w-100"
-                  src={`https://phpback.ddns.net/img/${events.imagem}`}
+                  src={`http://18.228.15.53/php/img/${events.imagem}`}
                   alt="First slide"
                   height="500px"
                   />

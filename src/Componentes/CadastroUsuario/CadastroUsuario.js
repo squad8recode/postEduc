@@ -38,7 +38,7 @@ export default function CadastroUsuario(props) {
     const Envio = async (evento) => {
         evento.preventDefault();
         // eslint-disable-next-line no-unused-vars
-        const resultado = fetch("https://phpback.ddns.net/cadastrousuario.php", { method: "POST", body: new FormData(evento.target) });
+        const resultado = fetch("http://18.228.15.53/php/cadastrousuario.php", { method: "POST", body: new FormData(evento.target) });
         
         const senhaform = evento.target.senha.value;
         const confirmesenha = evento.target.confirmesenha.value;
