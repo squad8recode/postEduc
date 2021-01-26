@@ -34,7 +34,7 @@ export default class Averificar extends React.Component{
     return(
       <Card className="mt-5 mb-5" style={css}>
         <Card.Body>
-            <Card.Img variant="top" src={`http://18.228.15.53/php/img/${this.props.imagem}`} height="100px"/>
+            <Card.Img variant="top" src={`http://52.67.245.155/php/img/${this.props.imagem}`} height="100px"/>
             <Card.Title className="mt-2"> {this.props.nome_evento}</Card.Title>
               <p>postado em: {this.props.data_postagem}</p>
             <Row className="mt-2">
