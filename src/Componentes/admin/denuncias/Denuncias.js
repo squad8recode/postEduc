@@ -13,7 +13,7 @@ import NaoTemPermissao from '../../Modal/naoTemPermissao'
   }
 
   componentDidMount(){
-    fetch("http://52.67.245.155/php/infodenuncia.php")
+    fetch("https://phpback.ddns.net/infodenuncia.php")
     .then( resposta => resposta.json() )
     .then( resposta => this.setState({ 'denuncias': resposta }) )
   }

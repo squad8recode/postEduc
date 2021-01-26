@@ -17,7 +17,7 @@ constructor(props){
 }
 
 componentDidMount(){
-  fetch("http://52.67.245.155/php/carrousel.php")
+  fetch("https://phpback.ddns.net/carrousel.php")
   .then( response => response.json())
   .then(responseJson => this.setState({'db': responseJson}));
 }

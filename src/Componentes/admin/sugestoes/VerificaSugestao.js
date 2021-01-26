@@ -13,7 +13,7 @@ export default class VerificaSugestao extends React.Component{
   }
 
   componentDidMount(){
-    fetch('http://52.67.245.155/php/selectsugestoes.php')
+    fetch('https://phpback.ddns.net/selectsugestoes.php')
     .then(resposta => resposta.json())
     .then(resposta => this.setState({'sugestoes':resposta}))
   }

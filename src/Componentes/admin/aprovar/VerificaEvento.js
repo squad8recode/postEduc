@@ -17,7 +17,7 @@ import NaoTemPermissao from '../../Modal/naoTemPermissao'
   }
 
   componentDidMount(){
-    fetch('http://52.67.245.155/php/verifica.php')
+    fetch('https://phpback.ddns.net/verifica.php')
     .then(resposta => resposta.json())
     .then(resposta => this.setState({'eventos':resposta}))
   }
