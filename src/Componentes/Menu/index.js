@@ -35,7 +35,7 @@ class Menu extends React.Component{
             return(
                 <Navbar className="menu" expand="lg" variant="dark">
                     <Navbar.Brand >
-                        <Link to="/"><img src={Logo} width="30" height="30" className="d-inline-block align-top" 
+                        <Link to="/"><img src={Logo} width="50" height="50" className="d-inline-block align-top" 
                         alt="PostEduc logo" /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -107,7 +107,7 @@ class Menu extends React.Component{
             return(
                 <Navbar className="menu" expand="lg" variant="dark">
                     <Navbar.Brand >
-                        <Link to="/"><img src={Logo} width="30" height="30" className="d-inline-block align-top" 
+                        <Link to="/"><img src={Logo} width="50" height="50" className="d-inline-block align-top" 
                         alt="PostEduc logo" /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
