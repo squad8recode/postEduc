@@ -92,13 +92,6 @@ class Menu extends React.Component{
                             <Nav.Link onClick={this.sair} as={Link} to="/">Sair</Nav.Link>
                         </Nav.Item>
                             
-                            <Nav.Item>
-                                {/*as={Link} href="" to=""*/}
-                                <Nav.Link>|</Nav.Link> 
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/CadastroUsuario">Cadastrar-se</Nav.Link> 
-                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
