@@ -1,0 +1,14 @@
+/*Barra de Navegacao roxo claro: :#b9a3ed azulmar: #0068c8 azulclarinho:#e0ebf3 roxoescuro:#504456*/
+.login{
+    background-color:#504456;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    border-style: outset;
+    border-width: 5px;
+    border-color:#e0ebf3;
+    text-align: center;
+    color: #e0ebf3;
+}
