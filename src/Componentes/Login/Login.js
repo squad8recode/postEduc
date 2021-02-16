@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { NomeLogin, IdLogin } from '../../store/actions';
 import Cadeado from '../../Img/icone_cadeado.png';
-import Pessoa from '../../Img/pessoa1.png';
+//import Pessoa from '../../Img/pessoa1.png';
 
 
 
