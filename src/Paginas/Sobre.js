@@ -4,6 +4,7 @@ import '../css/index.css'
 
 import BgImagem from '../Img/mesa-estudos.jpg'
 import BgImagem2 from '../Img/matematica-estudos.jpg'
+import Pessoa from '../Img/pessoa1.png'
 
 
 class Sobre extends React.Component {   

@@ -27,7 +27,8 @@ export default class Caroussel extends React.Component{
   render(){
     
     return(
-      <Container fluid className="my-3">
+  
+    <Container fluid className="my-3">
           <Carousel>
             {this.state.events && this.state.events.map(events => (
               
