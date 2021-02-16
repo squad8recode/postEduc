@@ -2,53 +2,48 @@ import React from 'react'
 
 import {Carousel, Container} from 'react-bootstrap'
 
-import { Link } from 'react-router-dom'
-
+import banner1 from '../../Img/banner1.png'
+import banner2 from '../../Img/banner2.png'
+import banner3 from '../../Img/banner3.png'
+import banner4 from '../../Img/banner4.png'
 
 export default class Caroussel extends React.Component{
-
-  constructor(props){
-    super(props)
-
-    this.state = {
-      events:''
-    }
-  }
-
-  componentDidMount(){
-    
-    fetch('http://52.67.245.155/php/carrousel.php')
-    .then(res => res.json())
-    .then(resJson => this.setState({'events':resJson}))
-   
-  }
-  
-
   render(){
-    
     return(
-  
     <Container fluid className="my-3">
-          <Carousel>
-            {this.state.events && this.state.events.map(events => (
-              
-              <Carousel.Item key={events.id_evento}>
-                <Link to={`/EventoEspecifico${events.id_evento}`}>
-                  <img
-                  
-                  className="d-block w-100"
-                  src={`http://52.67.245.155/php/img/${events.imagem}`}
-                  alt="First slide"
-                  height="500px"
-                  />
-                </Link>
-                <Carousel.Caption>
-                <h3>{events.nome_evento}</h3>
-                  
-                </Carousel.Caption>
+          <Carousel>   
+              <Carousel.Item>
+                <img
+                className="d-block w-100"
+                src={banner3}
+                alt="First slide"
+                height="500px"
+                />
               </Carousel.Item>
-            
-            ))}
+              <Carousel.Item>
+                <img
+                className="d-block w-100"
+                src={banner4}
+                alt="First slide"
+                height="500px"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                className="d-block w-100"
+                src={banner2}
+                alt="First slide"
+                height="500px"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                className="d-block w-100"
+                src={banner1}
+                alt="First slide"
+                height="500px"
+                />
+              </Carousel.Item>
           </Carousel>
         </Container>
     )
