@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { NomeLogin, IdLogin } from '../../store/actions';
 import Cadeado from '../../Img/icone_cadeado.png';
-import Pessoa from '../../Img/pessoa1.png';
+//import Pessoa from '../../Img/pessoa1.png';
 
 
 
@@ -63,9 +63,11 @@ class Login extends React.Component{
             'id':dadosbd[0].id_usuario,
             'nome':dadosbd[0].nome,
          })
+        
          
         const { NomeLogin,IdLogin } = this.props
         
+        // NomeLogin(this.state.nome)
         NomeLogin(this.state.nome)
         IdLogin(this.state.id)
 
