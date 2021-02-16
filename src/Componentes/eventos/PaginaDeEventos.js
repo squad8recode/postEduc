@@ -29,8 +29,8 @@ componentDidMount(){
           <Caroussel/>
 
         <div className="flex altura">
-          <p>Populares</p>
-          <a href="http://localhost:3000/">+ Ver Todos</a>
+          <p>Recentes</p>
+          {/* <a href="#">+ Ver Todos</a> */}
         </div>
 
         <div className="flex bet margin fwrap">
@@ -55,7 +55,7 @@ componentDidMount(){
 
         <div className="flex altura">
           <p>Categorias</p>
-          <a href="http://localhost:3000/">+ Ver Mais</a>
+          {/* <a href="http://localhost:3000/">+ Ver Mais</a> */}
         </div>
 
         <div className="flex bet margin fwrap">

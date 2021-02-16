@@ -69,7 +69,7 @@ export default function CadastroUsuario() {
 					body: new FormData(evento.target),
 				});
 				alert('Cadastro realizado com sucesso!');
-				history.push('/');
+				history.push('/Login');
 			}
 		}
 	};

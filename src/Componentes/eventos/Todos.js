@@ -22,7 +22,7 @@ export default class TodosEventos extends React.Component{
     return(
       
       <Container fluid>
-        <Row className="mx-5">
+        <Row className="mx-5 my-4">
           {this.state.eventos && this.state.eventos.map(even => (
             
               <Minievento  
@@ -30,6 +30,7 @@ export default class TodosEventos extends React.Component{
                 id={even.id_evento}  
                 imagem={even.imagem} 
                 nome={even.nome_evento}
+                modalidade = {even.modalidade}
               />
             
           ))}
