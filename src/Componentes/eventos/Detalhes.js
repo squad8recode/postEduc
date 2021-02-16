@@ -20,7 +20,7 @@ class Detalhes extends React.Component{
 
         if(this.state.criador === novoId && this.props.modalidade === 'semipresencial'){
             return (
-                <div>                
+                <div >                
                     <h2>{this.props.nome}</h2>
                     <p className="pt-4">Modalidade: {this.props.modalidade}</p>
                     <p className="pt-1">Cidade:{this.props.cidade} | Estado:{this.props.estado} | Bairro {this.props.bairro}</p>
