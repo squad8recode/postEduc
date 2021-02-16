@@ -1,11 +1,16 @@
 import React from 'react';
-import {Form,Button,Col,Jumbotron}  from 'react-bootstrap';
+import {Form,Button,Col}  from 'react-bootstrap';
 import { Redirect } from 'react-router';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { NomeLogin, IdLogin } from '../../store/actions';
+import Cadeado from '../../Img/icone_cadeado.png';
+import Pessoa from '../../Img/pessoa1.png';
 
+
+
+import './login.css';
 
 class Login extends React.Component{
     constructor(props){
@@ -72,29 +77,26 @@ class Login extends React.Component{
             return <Redirect to="/" />
         }else{
             return(
-                <Jumbotron className="m-0">
-                    <div >
-                        <h2 className="text-center">Login</h2><br />
+                    <div className="login">
+                        <img src={Cadeado} width="50" height="50" alt="login"/>
                         <Form onSubmit={this.Envio}>
 
                             <Col sm={12} md={{span: 6, offset: 3}} lg={{offset:4, span:4}}>
                             <Form.Group>
                                 <Form.Label>Nome de usuário</Form.Label>
-                                <Form.Control onChange={this.alteracao_user} type="text" id="nome_usuario" name="nome_usuario" placeholder="Entre com o seu nome de usuário" required/>
+                                <Form.Control onChange={this.alteracao_user} type="text" id="nome_usuario" name="nome_usuario" placeholder="Digite seu nome de usuário" required/>
                             </Form.Group>
 
                             <Form.Group>
                                 <Form.Label>Senha</Form.Label>
-                                <Form.Control onChange={this.alteracao_senha} type="password" id="senha" name="senha" placeholder="Entre com sua senha" required/>
+                                <Form.Control onChange={this.alteracao_senha} type="password" id="senha" name="senha" placeholder="Digite sua senha" required/>
                             </Form.Group>
 
                             <Button variant="primary" type="submit">Entrar</Button>
 
                             </Col>
-                        </Form>
-                        
-                    </div>
-                </Jumbotron>       
+                        </Form> 
+                    </div>   
             )
     
         }

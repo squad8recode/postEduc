@@ -1,8 +1,11 @@
 import React from 'react';
 import {useState} from 'react';
-import {Form,Col,Button, Jumbotron} from 'react-bootstrap';
+import {Form,Col,Button} from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import PoliticaPrivacidade from '../Modal/PoliticaPrivacidade'
+
+import './cadastro.css';
+
 
 
 
@@ -55,9 +58,8 @@ export default function CadastroUsuario(props) {
 
     
     return(
-        <Jumbotron className="m-0">
-            <div>       
-                <h2 className="text-center">Seja Bem-vindo, Faça aqui seu Cadastro</h2>
+            <div className="cadastro">       
+                <h3>Seja Bem-vindo, Faça aqui seu Cadastro</h3>
                 <br />
 
                 <Form onSubmit={Envio}>                
@@ -187,13 +189,12 @@ export default function CadastroUsuario(props) {
                                 <Button variant="secondary" size="sm">
                                     <PoliticaPrivacidade/>
                                 </Button>
+                                <Button className='ml-5' variant="primary" type="submit">Finalizar Cadastro</Button>                 
                             </Form.Group>
                         </Form.Row>
-                        <Button variant="primary" type="submit">Cadastrar</Button>                 
                     </Col>
                 </Form>
             </div>
-        </Jumbotron>
     )
 }
 
