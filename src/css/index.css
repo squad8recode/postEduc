@@ -141,3 +141,6 @@ p.sobreObjetivo{
   max-width: 700px;
 }
 
+input[type=number] {
+  -moz-appearance:textfield;
+}

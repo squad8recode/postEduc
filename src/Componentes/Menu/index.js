@@ -35,7 +35,11 @@ class Menu extends React.Component{
             return(
                 <Navbar className="menu" expand="lg" variant="dark">
                     <Navbar.Brand >
+
+                       
+
                         <Link to="/"><img src={Logo} width="34" height="34" className="d-inline-block align-top" 
+
                         alt="PostEduc logo" /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -92,13 +96,6 @@ class Menu extends React.Component{
                             <Nav.Link onClick={this.sair} as={Link} to="/">Sair</Nav.Link>
                         </Nav.Item>
                             
-                            <Nav.Item>
-                                {/*as={Link} href="" to=""*/}
-                                <Nav.Link>|</Nav.Link> 
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link as={Link} to="/CadastroUsuario">Cadastrar-se</Nav.Link> 
-                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -107,7 +104,7 @@ class Menu extends React.Component{
             return(
                 <Navbar className="menu" expand="lg" variant="dark">
                     <Navbar.Brand >
-                        <Link to="/"><img src={Logo} width="30" height="30" className="d-inline-block align-top" 
+                        <Link to="/"><img src={Logo} width="50" height="50" className="d-inline-block align-top" 
                         alt="PostEduc logo" /></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
