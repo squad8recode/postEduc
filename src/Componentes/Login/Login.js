@@ -63,9 +63,11 @@ class Login extends React.Component{
             'id':dadosbd[0].id_usuario,
             'nome':dadosbd[0].nome,
          })
+        
          
         const { NomeLogin,IdLogin } = this.props
         
+        // NomeLogin(this.state.nome)
         NomeLogin(this.state.nome)
         IdLogin(this.state.id)
 

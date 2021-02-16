@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c79fae1.chunk.css",
+    "main.js": "/static/js/main.ea07a0d0.chunk.js",
+    "main.js.map": "/static/js/main.ea07a0d0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6864d8e1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6864d8e1.js.map",
+    "static/css/2.ae9f1eb3.chunk.css": "/static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.d76bda66.chunk.js": "/static/js/2.d76bda66.chunk.js",
+    "static/js/2.d76bda66.chunk.js.map": "/static/js/2.d76bda66.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ae9f1eb3.chunk.css.map": "/static/css/2.ae9f1eb3.chunk.css.map",
+    "static/css/main.2c79fae1.chunk.css.map": "/static/css/main.2c79fae1.chunk.css.map",
+    "static/js/2.d76bda66.chunk.js.LICENSE.txt": "/static/js/2.d76bda66.chunk.js.LICENSE.txt",
+    "static/media/desenho.jpg": "/static/media/desenho.235f3581.jpg",
+    "static/media/icone_face.62d26a37.svg": "/static/media/icone_face.62d26a37.svg",
+    "static/media/icone_insta.5745af89.svg": "/static/media/icone_insta.5745af89.svg",
+    "static/media/icone_whats.18298cf0.svg": "/static/media/icone_whats.18298cf0.svg",
+    "static/media/ideia.jpg": "/static/media/ideia.57ae6c38.jpg",
+    "static/media/logo.958e7f86.png": "/static/media/logo.958e7f86.png",
+    "static/media/matematica-estudos.8ec73386.jpg": "/static/media/matematica-estudos.8ec73386.jpg",
+    "static/media/matematica.jpg": "/static/media/matematica.c4ff85fe.jpg",
+    "static/media/mesa-estudos.9c05ea0d.jpg": "/static/media/mesa-estudos.9c05ea0d.jpg",
+    "static/media/musica.jpg": "/static/media/musica.6d2b2543.jpg",
+    "static/media/palestra.jpg": "/static/media/palestra.2c7c941c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6864d8e1.js",
+    "static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.d76bda66.chunk.js",
+    "static/css/main.2c79fae1.chunk.css",
+    "static/js/main.ea07a0d0.chunk.js"
+  ]
+}
