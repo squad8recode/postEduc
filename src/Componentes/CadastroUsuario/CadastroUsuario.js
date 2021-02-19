@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { useState } from 'react';
-import { Form, Col, Button, Jumbotron } from 'react-bootstrap';
+import { Form, Col, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
+
+import './cadastro.css';
 import PoliticaPrivacidade from '../Modal/PoliticaPrivacidade';
 
 export default function CadastroUsuario() {
@@ -75,9 +77,8 @@ export default function CadastroUsuario() {
 	};
 
 	return (
-		<Jumbotron className='m-0'>
-			<div>
-				<h2 className='text-center'>Seja Bem-vindo, Faça aqui seu Cadastro</h2>
+		<div className="cadastro">       
+				<h3>Olá! Faça aqui seu Cadastro</h3>
 				<br />
 
 				<Form noValidate validated={validated} onSubmit={Envio}>
@@ -374,6 +375,5 @@ export default function CadastroUsuario() {
 					</Col>
 				</Form>
 			</div>
-		</Jumbotron>
 	);
 }
