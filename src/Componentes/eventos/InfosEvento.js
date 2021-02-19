@@ -15,7 +15,7 @@ export default class InfosEvento extends React.Component{
                     <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="100%" height="400px"/>
                     </Col>
                     <br />
-                    <h8>Postado dia: {this.props.data} às {this.props.hora}</h8>
+                    <h6>Postado dia: {this.props.data} às {this.props.hora}</h6>
                 </Container>
             );
 
@@ -29,7 +29,7 @@ export default class InfosEvento extends React.Component{
                     <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="100%" height="400px"/>
                     </Col>
                     <br />
-                    <h8>Postado dia: {this.props.data} às {this.props.hora}</h8>
+                    <h6>Postado dia: {this.props.data} às {this.props.hora}</h6>
                 </Container>
             );
         }

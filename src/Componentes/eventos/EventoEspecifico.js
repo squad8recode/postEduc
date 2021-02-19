@@ -47,7 +47,7 @@ export default class EventoEspecifico extends React.Component{
               )}
               <Container >
                 <Row className="justify-content-center">
-                  <h8>Compartilhar: </h8>
+                  <h6>Compartilhar: </h6>
                   <Button variant="white" className="float-right" >
                   <Image src={Facebook}>
                   </Image>
@@ -85,7 +85,7 @@ export default class EventoEspecifico extends React.Component{
                       carga={detalhes.carga_horaria}
                       criador = {detalhes.criador_evento}
                       link = {detalhes.link}
-                      
+                      id={detalhes.id_evento}
                     />
                   )
             )} 

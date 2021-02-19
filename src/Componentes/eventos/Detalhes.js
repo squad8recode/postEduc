@@ -15,8 +15,8 @@ class Detalhes extends React.Component{
 
     render(){
         const { novoId } = this.props
-
-        const css = {'text-decoration': 'underline',color:'rgb(114, 8, 114)'}
+        console.log(this.props.id)
+        const css = {'textDecoration': 'underline',color:'rgb(114, 8, 114)'}
 
         if(this.state.criador === novoId && this.props.modalidade === 'semipresencial'){
             return (
