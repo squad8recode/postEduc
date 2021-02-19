@@ -13,7 +13,7 @@ export default class Minievento extends React.Component{
               <Card.Body as={Row}>
                 <Card.Title as={Col}>{this.props.nome}</Card.Title>
                 <Card.Link as={Link} to={{pathname:`/EventoEspecifico${this.props.id}`}} className="ini">
-                  <Button variant="success" size="sm">+ Info</Button></Card.Link>
+                  <Button variant="primary" size="sm">+ Info</Button></Card.Link>
               </Card.Body>
             </Row>
         </Card>

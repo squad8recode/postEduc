@@ -22,6 +22,7 @@ p{
 
 .fwrap{
   flex-wrap: wrap;
+  color:#504456;
 }
 
 .bet{
@@ -62,9 +63,19 @@ p{
   text-align: center;
 }
 
+.benef{
+  background-color: #8650b3 ;
+  color:white;
+}
+
+.categ{
+  background-color: #0068c8 ;
+  color:white;
+}
+
 .informacoes{
   background-color: rgba(80, 68, 86, .9);
-  color: #fff; 
+  color: white; 
   border-radius: 15px;
   padding: 30px 30px 30px 30px;
   margin-top: 30px;
@@ -98,7 +109,7 @@ h1.sobre{
 
 p.sobre{
   font-size: 30px;
-  color:rgba(224,235,243);
+  color:white;
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
@@ -120,8 +131,11 @@ p.sobre{
   opacity: 1.0;
 }
 
+
+
 .sobreObjetivo{
   text-align: center;
+  color:#504456;
 
 }
 

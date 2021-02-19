@@ -6,7 +6,7 @@ import Minievento from './Minievento'
 import Minicategoria from './Minicategoria'
 import Caroussel from '../carrossel/Carousel'
 import Sugestoes from '../Modal/Sugestoes'
-
+import Pessoa from '../../Img/pessoa1.png'
 export default class PaginaDeEvento extends React.Component{
 
 constructor(props){
@@ -28,9 +28,9 @@ componentDidMount(){
         
           <Caroussel/>
 
-        <div className="flex altura">
+        <div className="flex altura benef">
           <p>Populares</p>
-          <a href="http://localhost:3000/">+ Ver Todos</a>
+          {/*<a href="http://localhost:3000/">+ Ver Todos</a>*/}
         </div>
 
         <div className="flex bet margin fwrap">
@@ -45,16 +45,14 @@ componentDidMount(){
          
         </div>
 
-        <div className="borda margin center informacoes">
+         {/*<div className="borda margin center informacoes">
 
-          {/* <h2 className="borda margin  info"> + Crie um Grupo de estudos</h2>
-          <h3 className="cor">Area em fase de desenvolvimento</h3> */}
+          <h2 className="borda margin  info"> + Crie um Grupo de estudos</h2>
+          <h3 className="cor">Area em fase de desenvolvimento</h3> 
 
-        </div>
-
-        <div className="flex altura">
+        </div>*/}
+        <div className="flex altura categ">
           <p>Categorias</p>
-          <a href="http://localhost:3000/">+ Ver Mais</a>
         </div>
 
         <div className="flex bet margin fwrap">
@@ -62,18 +60,18 @@ componentDidMount(){
           <Minicategoria/>
           <Minicategoria/>
           <Minicategoria/>
-          <Minicategoria/>
-          
+          <Minicategoria/> 
         </div>
-
-
-        <div className="margin center informacoes">
-
-          <h2 className="margin  info">Não encontrou um Curso ou Evento de seu interesse? Nos ajude a melhorar o postEduc</h2>
-          <Sugestoes />
-
+      
+        <div className="row bg-light">
+            <div className=".col-md-12">
+              <img src={Pessoa} width="237" height="234" alt="login" className="pessoa mb-2"/>
+            </div>
+            <div className="margin center informacoes .col-md-8 mt-6">
+              <h4 className="margin info">Não encontrou um Curso ou Evento de seu interesse? Nos ajude a melhorar o postEduc</h4>
+              <Sugestoes />
+            </div>  
         </div>
-
       </div>
     )
   }

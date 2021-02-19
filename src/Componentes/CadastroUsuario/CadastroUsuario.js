@@ -59,7 +59,7 @@ export default function CadastroUsuario(props) {
     
     return(
             <div className="cadastro">       
-                <h3>Seja Bem-vindo, Faça aqui seu Cadastro</h3>
+                <h3>Olá! Faça aqui seu Cadastro</h3>
                 <br />
 
                 <Form onSubmit={Envio}>                
