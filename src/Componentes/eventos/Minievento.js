@@ -6,9 +6,9 @@ import { Card, Button, Col, Row } from 'react-bootstrap'
 export default class Minievento extends React.Component{
   render(){
 
-    const css = {
-      overflow:'auto'
-    }
+    // const css = {
+    //   overflow:'auto'
+    // }
 
     return(
       <>
