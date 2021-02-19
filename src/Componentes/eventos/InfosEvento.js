@@ -12,7 +12,7 @@ export default class InfosEvento extends React.Component{
                         <Pop/>
                     </Col>
                     <Col xs={12} sm={12} md={12} lg={12}>
-                    <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="100%" height="400px" />
+                    <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="100%" height="550px"/>
                     </Col>
                     <br />
                     <h6>Postado dia: {this.props.data} às {this.props.hora}</h6>
@@ -26,7 +26,7 @@ export default class InfosEvento extends React.Component{
                         Verificado
                     </Col>
                     <Col xs={12} sm={12} md={12} lg={12}>
-                    <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="100%" height="600px"/>
+                    <img src={`http://52.67.245.155/php/img/${this.props.imagem}`} alt='imagem' title='titulo' width="100%" height="550px"/>
                     </Col>
                     <br />
                     <h6>Postado dia: {this.props.data} às {this.props.hora}</h6>

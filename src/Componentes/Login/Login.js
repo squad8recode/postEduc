@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { NomeLogin, IdLogin } from '../../store/actions';
 import Cadeado from '../../Img/icone_cadeado.png';
-//import Pessoa from '../../Img/pessoa1.png';
 
 import './login.css';
 
@@ -57,23 +56,22 @@ class Login extends React.Component {
 
 		const resp = await fetch(url, cabecalho);
 		const dadosbd = await resp.json();
-        
-        if(dadosbd.mensagem === 'erro'){
-            alert('usuario ou senha invalido')
-        }else{
-            this.setState({
-                id: dadosbd[0].id_usuario,
-                nome: dadosbd[0].nome,
-            });
-    
-            const { NomeLogin, IdLogin } = this.props;
-    
-            // NomeLogin(this.state.nome)
-            NomeLogin(this.state.nome);
-            IdLogin(this.state.id);
-    
-            this.setState({ redirect: true });
-        }
+
+		if (dadosbd.mensagem === 'erro') {
+			alert('usuario ou senha invalido');
+		} else {
+			this.setState({
+				id: dadosbd[0].id_usuario,
+				nome: dadosbd[0].nome,
+			});
+
+			const { NomeLogin, IdLogin } = this.props;
+
+			NomeLogin(this.state.nome);
+			IdLogin(this.state.id);
+
+			this.setState({ redirect: true });
+		}
 	}
 
 	render() {

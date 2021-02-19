@@ -13,7 +13,7 @@ export default class Minicategoria extends React.Component{
           <Card.Body as={Row}>
             <Card.Title as={Col}>{this.props.categoria}</Card.Title>
             <Card.Link href="#" className="ini">
-              <Button variant="success" size="sm">+ Info</Button>
+              <Button variant="primary" size="sm">+ Info</Button>
             </Card.Link>
           </Card.Body>
         </Row>
