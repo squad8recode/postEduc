@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../css/carrousel.css'
 
 import {Carousel, Container} from 'react-bootstrap'
 
@@ -11,37 +12,33 @@ export default class Caroussel extends React.Component{
   render(){
     return(
     <Container fluid className="my-3">
-          <Carousel>   
+          <Carousel >   
               <Carousel.Item>
                 <img
-                className="d-block w-100"
+                className="d-block w-100 tamanhoResponsivo"
                 src={banner3}
                 alt="First slide"
-                height="500px"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                className="d-block w-100"
+                className="d-block w-100 tamanhoResponsivo"
                 src={banner4}
                 alt="First slide"
-                height="500px"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                className="d-block w-100"
+                className="d-block w-100 tamanhoResponsivo"
                 src={banner2}
                 alt="First slide"
-                height="500px"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                className="d-block w-100"
+                className="d-block w-100 tamanhoResponsivo"
                 src={banner1}
                 alt="First slide"
-                height="500px"
                 />
               </Carousel.Item>
           </Carousel>
