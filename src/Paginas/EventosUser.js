@@ -36,6 +36,7 @@ class EventosUser extends React.Component{
               id={event.id_evento}  
               imagem={event.imagem} 
               nome={event.nome_evento}
+              modalidade = {event.modalidade}
             />
           ))}
           </div>
