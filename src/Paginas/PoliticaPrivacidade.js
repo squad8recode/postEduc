@@ -1,10 +1,5 @@
 import React from 'react'
 import '../css/index.css'
-import {Col} from "react-bootstrap"
-
-
-
-
 
 class PoliticaPrivacidade extends React.Component {   
 
