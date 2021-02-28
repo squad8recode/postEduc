@@ -69,11 +69,12 @@ class Detalhes extends React.Component {
                         variant='outline-info'
                         as={Link}
                         to={`/EditarEvento${this.props.id}`}
+                        className='ml-3'
                     >
                         Editar
                     </Button>
                 )}
-                    <Button className='ml-5'> Participar </Button>
+                    <Button className='ml-3'> Participar </Button>
                 </Row>
             </div>
         );

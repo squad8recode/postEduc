@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+
 }
 p{
   font-weight: bold;
@@ -95,8 +95,13 @@ p{
   color: blue;
 }
 
+.hcateg{
+  height: 270px;
+  padding-top: 8px;
+}
+
 .h{
-  height: 300px;
+  height: 330px;
   padding-top: 8px;
 }
 

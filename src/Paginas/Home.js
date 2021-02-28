@@ -31,7 +31,7 @@ export default class PaginaDeEvento extends React.Component {
 					{/*<a href="http://localhost:3000/">+ Ver Todos</a>*/}
 				</div>
 
-				<div className='flex bet margin fwrap'>
+				<div className='d-flex fwrap justify-content-center '>
 					{this.state.db &&
 						this.state.db.map((arrayevento) => (
 							<Minievento
@@ -54,7 +54,7 @@ export default class PaginaDeEvento extends React.Component {
 					<p>Categorias</p>
 				</div>
 
-				<div className='flex bet margin fwrap'>
+				<div className='d-flex fwrap justify-content-center'>
 					<Minicategoria categoria='Musica' imagem='musica.jpg' />
 					<Minicategoria categoria='Matematica' imagem='matematica.jpg' />
 					<Minicategoria categoria='Desenho' imagem='desenho.jpg' />

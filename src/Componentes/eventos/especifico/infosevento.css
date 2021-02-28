@@ -1,9 +1,9 @@
-@media(max-width:1440px){
+@media(max-width:1500px){
   .foto{
     height: 420px;
   }
 }
-@media(min-width:1441px){
+@media(min-width:1501px){
   .foto{
     height: 600px;
   }
