@@ -7,6 +7,7 @@ import EditaSemi from '../Componentes/eventos/editar/editarSemi';
 import NaoTemPermissao from '../Componentes/Modal/naoTemPermissao';
 
 import { Container } from 'react-bootstrap';
+import '../css/cadastro.css'
 
 class Edicao extends React.Component {
 	constructor(props) {
@@ -142,47 +143,49 @@ class Edicao extends React.Component {
 		const { novoId } = this.props;
 		if (this.state.criador === novoId) {
 			return (
-				<>
+				<div className="cadastro">
 					<Container>
-						<p>Esse curso será ministrado de qual forma agora? </p>
-						<div className='form-row mb-4 ml-1'>
-							<label className='form-check-label mr-3 ' htmlFor='modalidade'>
-								<input
-									type='radio'
-									className='mr-2 '
-									name='modalidade'
-									value='presencial'
-									onMouseDown={this.muda}
-								/>
-								Presencial
-							</label>
+						<div className='d-flex flex-column align-items-center justify-content-center mt-4 mb-2'>
+							<p>Esse curso será ministrado de qual forma agora? </p>
+							<div className='form-row mb-4 ml-1'>
+								<label className='form-check-label mr-3 ' htmlFor='modalidade'>
+									<input
+										type='radio'
+										className='mr-2 '
+										name='modalidade'
+										value='presencial'
+										onMouseDown={this.muda}
+									/>
+									Presencial
+								</label>
 
-							<label className='form-check-label mr-3 ' htmlFor='modalidade'>
-								<input
-									type='radio'
-									className='mr-2 '
-									name='modalidade'
-									value='online'
-									onMouseDown={this.muda}
-								/>
-								Online
-							</label>
+								<label className='form-check-label mr-3 ' htmlFor='modalidade'>
+									<input
+										type='radio'
+										className='mr-2 '
+										name='modalidade'
+										value='online'
+										onMouseDown={this.muda}
+									/>
+									Online
+								</label>
 
-							<label className='form-check-label mr-3 ' htmlFor='modalidade'>
-								<input
-									type='radio'
-									className='mr-2'
-									name='modalidade'
-									value='semipresencial'
-									onMouseDown={this.muda}
-								/>{' '}
-								Semipresencial
-							</label>
+								<label className='form-check-label mr-3 ' htmlFor='modalidade'>
+									<input
+										type='radio'
+										className='mr-2'
+										name='modalidade'
+										value='semipresencial'
+										onMouseDown={this.muda}
+									/>{' '}
+									Semipresencial
+								</label>
+							</div>
 						</div>
 					</Container>
 
 					{this.apareceformulario()}
-				</>
+				</div>
 			);
 		} else {
 			return <NaoTemPermissao />;
