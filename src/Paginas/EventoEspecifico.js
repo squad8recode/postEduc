@@ -1,13 +1,11 @@
 import React from 'react';
 
-import {Container, Row, Col, Button, Image} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 
 import Detalhes from '../Componentes/eventos/especifico/Detalhes'
 import InfosEvento from '../Componentes/eventos/especifico/InfosEvento'
 import Descricao from '../Componentes/eventos/especifico/Descricao'
-import Facebook from '../Img/icone_face.png'
-import Insta from '../Img/icone_insta.png'
-import Whats from '../Img/icone_whats.png'
+
 
 export default class EventoEspecifico extends React.Component{
 
@@ -33,7 +31,7 @@ export default class EventoEspecifico extends React.Component{
       <Container fluid>
         <Container fluid>
           <Row>
-            <Col  sm={12} md={8}  lg={8} xl={6}className="center column sm-auto xs-auto md-auto lg-auto xl-auto ">
+            <Col  sm={12} md={8}  lg={8} xl={6}>
             {this.state.db && this.state.db.map( 
                   infosEvento => (
               <InfosEvento 
@@ -45,27 +43,10 @@ export default class EventoEspecifico extends React.Component{
               />
                   )
               )}
-              <Container >
-                <Row className="justify-content-center">
-                  <h6>Compartilhar: </h6>
-                  <Button variant="white" className="float-right" >
-                  <Image src={Facebook}>
-                  </Image>
-                  </Button>
-                  <Button variant="white" className="float-right" >
-                  <Image src={Insta}>
-                  </Image>
-                  </Button>
-                  <Button variant="white" className="float-right" >
-                  <Image src={Whats}>
-                  </Image>
-                  </Button>
-                </Row>
-                
-              </Container>
+              
               </Col>
             
-            <Col sm={12} md={4} lg={4} xl={6}className="p-5">
+            <Col sm={12} md={4} lg={4} xl={4}className="p-5 d-flex justify-content-start justify-content-sm-center">
  
             {this.state.db && this.state.db.map( 
                   detalhes => (

@@ -59,7 +59,7 @@ export default class TodosEventos extends React.Component{
        
         <hr/>
         <Container fluid>
-          <Row className="mx-5 my-4">
+          <Row className="d-flex justify-content-center">
             {this.state.filtrados.length > 0 ? this.state.filtrados.map(even => (
               <Minievento  
                 key={even.id_evento}

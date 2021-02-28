@@ -49,20 +49,20 @@ class Menu extends React.Component {
 								Todos os Eventos
 							</Nav.Link>
 						</Nav.Item>
-                        { novoNome && (
-                            <>
-                                <Nav.Item>
-                                    <Nav.Link as={Link} to='/EventosUser'>
-                                        Seus Eventos
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link as={Link} to='/CadastroEvento'>
-                                        + Criar Evento
-                                    </Nav.Link>
-                                </Nav.Item>
-                            </>
-                        )}
+						{novoNome && (
+							<>
+								<Nav.Item>
+									<Nav.Link as={Link} to='/EventosUser'>
+										Seus Eventos
+									</Nav.Link>
+								</Nav.Item>
+								<Nav.Item>
+									<Nav.Link as={Link} to='/CadastroEvento'>
+										+ Criar Evento
+									</Nav.Link>
+								</Nav.Item>
+							</>
+						)}
 
 						{novoNome === 'admin' && (
 							<>
@@ -108,9 +108,6 @@ class Menu extends React.Component {
 								</Nav.Item>
 							</>
 						)}
-						{/* <Nav.Item>
-                            <Nav.Link>|</Nav.Link> 
-                        </Nav.Item> */}
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
