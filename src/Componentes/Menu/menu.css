@@ -2,7 +2,16 @@
     background-color:#5c4a64;
     font-weight: bold;
     color: white; 
+    justify-content: center;
+    align-items: center;
 }
 
+.separadorMenu{
+    border-right: 2px solid rgba(999,999,999,0.3);
+}
 
-
+@media(max-width:992px){
+    .separadorMenu{
+        border-right: none;
+    }
+}

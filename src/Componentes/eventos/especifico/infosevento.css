@@ -1,0 +1,10 @@
+@media(max-width:1440px){
+  .foto{
+    height: 420px;
+  }
+}
+@media(min-width:1441px){
+  .foto{
+    height: 600px;
+  }
+}
