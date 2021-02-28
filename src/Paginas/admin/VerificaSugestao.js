@@ -1,5 +1,5 @@
 import React from 'react'
-import Sugestao from './sugestao'
+import Sugestao from '../../Componentes/admin/sugestoes/sugestao'
 import { Container, Table } from 'react-bootstrap'
 
 export default class VerificaSugestao extends React.Component{

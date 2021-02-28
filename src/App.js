@@ -2,9 +2,9 @@ import Menu from './Componentes/Menu';
 import Rodape from './Componentes/Rodape';
 import Rotas from './Rotas';
 
-import './App.css';
+import './css/App.css';
 
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 function App() {

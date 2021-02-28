@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
-import './cadastro.css';
-import PoliticaPrivacidade from '../Modal/PoliticaPrivacidade';
+import '../css/cadastro.css';
+import PoliticaPrivacidade from '../Componentes/Modal/PoliticaPrivacidade';
 
 export default function CadastroUsuario() {
 	const [form, setForm] = useState({
@@ -369,7 +369,7 @@ export default function CadastroUsuario() {
 								</Button>
 							</Form.Group>
 						</Form.Row>
-						<Button variant='primary' type='submit'>
+						<Button variant='primary' type='submit' className='mb-5'>
 							Cadastrar
 						</Button>
 					</Col>
