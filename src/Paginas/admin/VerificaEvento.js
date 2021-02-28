@@ -25,8 +25,9 @@ class VerificaEvento extends React.Component{
   }
 
   render(){
-    const { novoNome } = this.props
-    if( novoNome !== 'admin'){
+    const { novoId } = this.props
+    
+    if( novoId !== '11'){
       return <NaoTemPermissao/>
     }else{
       return(
@@ -51,7 +52,7 @@ class VerificaEvento extends React.Component{
 }
 
 const mapState = store =>({
-  novoNome: store.NomeLogin.novoNome
+  novoId: store.IdLogin.novoId,
 })
 
 

@@ -31,7 +31,6 @@ class Sugestoes extends React.Component {
 		  method:"POST",
 		  body:dados,
 		}
-		console.log(cabecalho)
 		
 		const resposta = await fetch(url,cabecalho)
 		await resposta

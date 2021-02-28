@@ -26,7 +26,7 @@ class Menu extends React.Component {
 	}
 
 	render() {
-		const { novoNome } = this.props;
+		const { novoNome, novoId } = this.props;
 
 		return (
 			<Navbar className='menu' expand='lg' variant='dark'>
@@ -64,7 +64,7 @@ class Menu extends React.Component {
 							</>
 						)}
 
-						{novoNome === 'admin' && (
+						{ novoId === '11' && (
 							<>
 								<Nav.Item>
 									<Nav.Link as={Link} to='/Denuncias'>
