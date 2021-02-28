@@ -13,6 +13,7 @@ import CadastroUsuario  from './Paginas/CadastroUsuario'
 import VerificaEvento   from './Paginas/admin/VerificaEvento'
 import Denuncias        from './Paginas/admin/Denuncias'
 import VerificaSugestao from './Paginas/admin/VerificaSugestao'
+import EditarUsuario    from './Paginas/EditarUsuario'
 import Categorias       from './Componentes/eventos/categorias'
 
 export class Rotas extends React.Component{
@@ -31,6 +32,7 @@ export class Rotas extends React.Component{
                 <Route exact path="/VerificaEvento"      component={VerificaEvento}/>
                 <Route exact path="/Denuncias"           component={Denuncias}/>
                 <Route exact path="/VerificaSugestao"    component={VerificaSugestao}/>
+                <Route exact path="/EditarCadastro"      component={EditarUsuario}/>
                 <Route exact path="/Categorias"          component={Categorias}/>
             </Switch>
         )    

@@ -88,8 +88,14 @@ class Menu extends React.Component {
 					<Nav className='ml-auto'>
 						{novoNome ? (
 							<>
+							
 								<Nav.Item>
-									<Nav.Link onClick={this.sair} as={Link} to='/'>
+									<Nav.Link as={Link} to='/EditarCadastro' className='separadorMenu'>
+										Editar Cadastro
+									</Nav.Link>
+								</Nav.Item>
+								<Nav.Item>
+									<Nav.Link onClick={this.sair} as={Link} to='/' className='mr-3'>
 										Sair
 									</Nav.Link>
 								</Nav.Item>
@@ -102,7 +108,7 @@ class Menu extends React.Component {
 									</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link as={Link} to='/CadastroUsuario'>
+									<Nav.Link as={Link} to='/CadastroUsuario' className='mr-3'>
 										Cadastrar-se
 									</Nav.Link>
 								</Nav.Item>

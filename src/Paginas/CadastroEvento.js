@@ -50,9 +50,10 @@ import ErroEfetuarLogin from '../Componentes/Modal/ErroEfetuarLogin'
     }else{
 
       return(
-        <>
+        <div className="cadastro">
           <Container>
-            
+            <div className='d-flex flex-column align-items-center justify-content-center mt-4 mb-2'>
+
             <p >Esse curso será ministrado de qual forma: </p>
             <div className="form-row mb-4 ml-1">
               <label className="form-check-label mr-3 " htmlFor="modalidade"><input type="radio" className="mr-2 " name="modalidade"  value="presencial" onMouseDown={this.muda}/>Presencial</label>
@@ -61,9 +62,10 @@ import ErroEfetuarLogin from '../Componentes/Modal/ErroEfetuarLogin'
                 
               <label className="form-check-label mr-3 " htmlFor="modalidade"><input type="radio" className="mr-2" name="modalidade"  value="semipresencial" onMouseDown={this.muda} /> Semipresencial</label>
             </div>
+            </div>
           </Container>
           {this.aparece()}
-        </>
+        </div>
       )
     }
   }
