@@ -5,11 +5,6 @@ import { Card, Button, Col, Row } from 'react-bootstrap'
 
 export default class Minievento extends React.Component{
   render(){
-
-    // const css = {
-    //   overflow:'auto'
-    // }
-
     return(
       <>
         <Card className="card h my-2 mr-3 ml-3">

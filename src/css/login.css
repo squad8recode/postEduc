@@ -1,14 +1,25 @@
 /*Barra de Navegacao roxo claro: :#b9a3ed azulmar: #0068c8 azulclarinho:#e0ebf3 roxoescuro:#504456*/
+
 .login{
-    background-color:#504456;
-    margin-top: 2%;
+    /* margin-top: 2%;
     margin-bottom: 5%;
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 20%;  
+    */
+
+    background-color:#504456;
+    width: 50vw;
     padding: 2%;
     border-style: outset;
     border-width: 2px;
     border-color:#a9d5ff;
     text-align: center;
     color: #e0ebf3;
+}
+
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
 }

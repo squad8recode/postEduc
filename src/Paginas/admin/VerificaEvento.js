@@ -1,10 +1,12 @@
 import React from 'react'
-import Averificar from './Averificar'
-import {Container, Col,Row} from 'react-bootstrap'
 import { connect } from 'react-redux';
-import NaoTemPermissao from '../../Modal/naoTemPermissao'
 
- class VerificaEvento extends React.Component{
+import NaoTemPermissao from '../../Componentes/Modal/naoTemPermissao'
+import Averificar from '../../Componentes/admin/aprovar/Averificar'
+
+import {Container, Col,Row} from 'react-bootstrap'
+
+class VerificaEvento extends React.Component{
   constructor(props){
     super(props)
 
@@ -37,6 +39,7 @@ import NaoTemPermissao from '../../Modal/naoTemPermissao'
                   nome_evento = {item.nome_evento}
                   data_postagem = {item.data_postagem}
                   imagem  = {item.imagem}
+                  modalidade = {item.modalidade}
                 /> 
               </Col>
             ))}

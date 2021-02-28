@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import ErroEfetuarLoginEdit from '../../Modal/ErroEfetuarLoginEdit'
-import MiniEvento from '../Minievento'
-import NaoPossuiEvento from '../../Modal/naoPossui'
+import ErroEfetuarLoginEdit from '../Componentes/Modal/ErroEfetuarLoginEdit'
+import MiniEvento from '../Componentes/eventos/minis/Minievento'
+import NaoPossuiEvento from '../Componentes/Modal/naoPossui'
 
 
 class EventosUser extends React.Component{

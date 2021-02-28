@@ -1,18 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-import EditaOnline from './editarOnline';
-import EditaPresencial from './editarPresencial';
-import EditaSemi from './editarSemi';
+import EditaOnline from '../Componentes/eventos/editar/editarOnline';
+import EditaPresencial from '../Componentes/eventos/editar/editarPresencial';
+import EditaSemi from '../Componentes/eventos/editar/editarSemi';
+import NaoTemPermissao from '../Componentes/Modal/naoTemPermissao';
 
 import { Container } from 'react-bootstrap';
 
-export default class Edicao extends React.Component {
+class Edicao extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
 			modalidade: '',
 			dados: [],
+			criador: '',
 		};
 
 		this.apareceformulario = this.apareceformulario.bind(this);
@@ -22,17 +25,17 @@ export default class Edicao extends React.Component {
 	muda(a) {
 		a.preventDefault();
 		let b = a.target.value;
-    console.log(b)
 		this.setState({ modalidade: b });
 	}
 
-	componentDidMount() {
-		fetch(
+	async componentDidMount() {
+		const url = await fetch(
 			`http://52.67.245.155/php/select.php?id=${this.props.match.params.id}`
-		)
-			.then((resposta) => resposta.json())
-			.then((resposta) => this.setState({ dados: resposta }));
-      console.log(this.state.dados)
+		);
+		const resposta = await url.json();
+
+		this.setState({ dados: resposta });
+		this.setState({ criador: resposta[0].criador_evento });
 	}
 
 	apareceformulario() {
@@ -136,49 +139,59 @@ export default class Edicao extends React.Component {
 	}
 
 	render() {
-		return (
-			<>
-				<Container>
-					<p>Esse curso será ministrado de qual forma agora? </p>
-					<div className='form-row mb-4 ml-1'>
-						<label className='form-check-label mr-3 ' htmlFor='modalidade'>
-							<input
-								type='radio'
-								className='mr-2 '
-								name='modalidade'
-								value='presencial'
-								onMouseDown={this.muda}
-							/>
-							Presencial
-						</label>
+		const { novoId } = this.props;
+		if (this.state.criador === novoId) {
+			return (
+				<>
+					<Container>
+						<p>Esse curso será ministrado de qual forma agora? </p>
+						<div className='form-row mb-4 ml-1'>
+							<label className='form-check-label mr-3 ' htmlFor='modalidade'>
+								<input
+									type='radio'
+									className='mr-2 '
+									name='modalidade'
+									value='presencial'
+									onMouseDown={this.muda}
+								/>
+								Presencial
+							</label>
 
-						<label className='form-check-label mr-3 ' htmlFor='modalidade'>
-							<input
-								type='radio'
-								className='mr-2 '
-								name='modalidade'
-								value='online'
-								onMouseDown={this.muda}
-							/>
-							Online
-						</label>
+							<label className='form-check-label mr-3 ' htmlFor='modalidade'>
+								<input
+									type='radio'
+									className='mr-2 '
+									name='modalidade'
+									value='online'
+									onMouseDown={this.muda}
+								/>
+								Online
+							</label>
 
-						<label className='form-check-label mr-3 ' htmlFor='modalidade'>
-							<input
-								type='radio'
-								className='mr-2'
-								name='modalidade'
-								value='semipresencial'
-								onMouseDown={this.muda}
-							/>{' '}
-							Semipresencial
-						</label>
-					</div>
-				</Container>
-        
+							<label className='form-check-label mr-3 ' htmlFor='modalidade'>
+								<input
+									type='radio'
+									className='mr-2'
+									name='modalidade'
+									value='semipresencial'
+									onMouseDown={this.muda}
+								/>{' '}
+								Semipresencial
+							</label>
+						</div>
+					</Container>
 
-				{this.apareceformulario()}
-			</>
-		);
+					{this.apareceformulario()}
+				</>
+			);
+		} else {
+			return <NaoTemPermissao />;
+		}
 	}
 }
+
+const mapState = (store) => ({
+	novoId: store.IdLogin.novoId,
+});
+
+export default connect(mapState)(Edicao);

@@ -2,12 +2,12 @@ import React from 'react';
 
 import {Container, Row, Col, Button, Image} from 'react-bootstrap'
 
-import Detalhes from './Detalhes'
-import InfosEvento from './InfosEvento'
-import Descricao from './Descricao'
-import Facebook from '../../Img/icone_face.png'
-import Insta from '../../Img/icone_insta.png'
-import Whats from '../../Img/icone_whats.png'
+import Detalhes from '../Componentes/eventos/especifico/Detalhes'
+import InfosEvento from '../Componentes/eventos/especifico/InfosEvento'
+import Descricao from '../Componentes/eventos/especifico/Descricao'
+import Facebook from '../Img/icone_face.png'
+import Insta from '../Img/icone_insta.png'
+import Whats from '../Img/icone_whats.png'
 
 export default class EventoEspecifico extends React.Component{
 

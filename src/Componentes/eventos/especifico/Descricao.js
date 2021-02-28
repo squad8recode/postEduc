@@ -1,7 +1,7 @@
 import React from 'react';
 import {Tabs, Tab} from 'react-bootstrap'
-import Denuncia from '../Modal/Denuncia'
-import '../eventos/descricao.css'
+import Denuncia from '../../Modal/Denuncia'
+import './descricao.css'
 
 export default class Descricao extends React.Component{
 

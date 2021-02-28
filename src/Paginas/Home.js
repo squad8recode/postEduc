@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '../../css/index.css';
+import '../css/index.css';
 
-import Minievento from './Minievento';
-import Minicategoria from './Minicategoria';
-import Caroussel from '../carrossel/Carousel';
-import Sugestoes from '../Modal/Sugestoes';
-import Pessoa from '../../Img/pessoa1.png';
+import Minievento from '../Componentes/eventos/minis/Minievento';
+import Minicategoria from '../Componentes/eventos/minis/Minicategoria';
+import Caroussel from '../Componentes/carrossel/Carousel';
+import Sugestoes from '../Componentes/Modal/Sugestoes';
+import Pessoa from '../Img/pessoa1.png';
 export default class PaginaDeEvento extends React.Component {
 	constructor(props) {
 		super(props);
@@ -27,7 +27,7 @@ export default class PaginaDeEvento extends React.Component {
 				<Caroussel />
 
 				<div className='flex altura benef'>
-					<p>Populares</p>
+					<p>Mais recentes</p>
 					{/*<a href="http://localhost:3000/">+ Ver Todos</a>*/}
 				</div>
 

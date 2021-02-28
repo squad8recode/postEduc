@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Tab, Row, Col, Nav, Badge} from 'react-bootstrap';
-import Minievento from './Minievento';
+import Minievento from './minis/Minievento';
 import './categorias.css';
 
 export default class Categorias extends Component {

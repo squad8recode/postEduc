@@ -1,14 +1,14 @@
 import React from 'react'
 
-import Online from './Online'
-import Presencial from './Presencial'
-import SemiPresencial from './Semipresencial'
+import Online from '../Componentes/eventos/criarEvento/Online'
+import Presencial from '../Componentes/eventos/criarEvento/Presencial'
+import SemiPresencial from '../Componentes/eventos/criarEvento/Semipresencial'
 
 import {Container} from 'react-bootstrap'
 
 import { connect } from 'react-redux'
 
-import ErroEfetuarLogin from '../../Modal/ErroEfetuarLogin'
+import ErroEfetuarLogin from '../Componentes/Modal/ErroEfetuarLogin'
 
 
  class CadastroEvento extends React.Component{
