@@ -41,7 +41,7 @@ export default function CadastroUsuario() {
 	async function verificaNomeUsuario( event ){
 		event.preventDefault()
 		//nome_usuario
-		const url = 'http://localhost/php/verificaNomeUsuario.php'
+		const url = 'http://52.67.245.155/php/verificaNomeUsuario.php'
 		const nomeUsuario = event.target.value
 		const header = {
 			method:'POST',
@@ -108,7 +108,7 @@ export default function CadastroUsuario() {
 				<h3>Olá! Faça aqui seu Cadastro</h3>
 				<br />
 
-				<Form noValidate validated={validated} id='formsa' onSubmit={Envio}>
+				<Form noValidate validated={validated} onSubmit={Envio}>
 					<Col sm={12} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
 						<Form.Group>
 							<Form.Label>
