@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77f13e21.chunk.css",
+    "main.js": "/static/js/main.552b80bd.chunk.js",
+    "main.js.map": "/static/js/main.552b80bd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6864d8e1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6864d8e1.js.map",
+    "static/css/2.ae9f1eb3.chunk.css": "/static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.6df2c4d0.chunk.js": "/static/js/2.6df2c4d0.chunk.js",
+    "static/js/2.6df2c4d0.chunk.js.map": "/static/js/2.6df2c4d0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ae9f1eb3.chunk.css.map": "/static/css/2.ae9f1eb3.chunk.css.map",
+    "static/css/main.77f13e21.chunk.css.map": "/static/css/main.77f13e21.chunk.css.map",
+    "static/js/2.6df2c4d0.chunk.js.LICENSE.txt": "/static/js/2.6df2c4d0.chunk.js.LICENSE.txt",
+    "static/media/banner1.a0fea0c5.png": "/static/media/banner1.a0fea0c5.png",
+    "static/media/banner2.efc48c9a.png": "/static/media/banner2.efc48c9a.png",
+    "static/media/banner3.9bf56880.png": "/static/media/banner3.9bf56880.png",
+    "static/media/banner4.1ba6056f.png": "/static/media/banner4.1ba6056f.png",
+    "static/media/desenho.jpg": "/static/media/desenho.235f3581.jpg",
+    "static/media/icone_cadeado.11a6c0ec.png": "/static/media/icone_cadeado.11a6c0ec.png",
+    "static/media/icone_face.62d26a37.svg": "/static/media/icone_face.62d26a37.svg",
+    "static/media/icone_insta.5745af89.svg": "/static/media/icone_insta.5745af89.svg",
+    "static/media/icone_whats.18298cf0.svg": "/static/media/icone_whats.18298cf0.svg",
+    "static/media/ideia.jpg": "/static/media/ideia.57ae6c38.jpg",
+    "static/media/matematica-estudos.8ec73386.jpg": "/static/media/matematica-estudos.8ec73386.jpg",
+    "static/media/matematica.jpg": "/static/media/matematica.c4ff85fe.jpg",
+    "static/media/mesa-estudos.95387a7d.jpg": "/static/media/mesa-estudos.95387a7d.jpg",
+    "static/media/musica.jpg": "/static/media/musica.6d2b2543.jpg",
+    "static/media/novologo.f0bf7145.png": "/static/media/novologo.f0bf7145.png",
+    "static/media/palestra.jpg": "/static/media/palestra.2c7c941c.jpg",
+    "static/media/pessoa1.de817da0.png": "/static/media/pessoa1.de817da0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6864d8e1.js",
+    "static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.6df2c4d0.chunk.js",
+    "static/css/main.77f13e21.chunk.css",
+    "static/js/main.552b80bd.chunk.js"
+  ]
+}

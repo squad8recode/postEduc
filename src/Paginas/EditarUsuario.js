@@ -56,23 +56,124 @@ function EditarUsuario(props) {
 		if (dadosbd.mensagem === 'erro') {
 			alert('A senha não coincide');
 		}else{
-			
-			setForm({
-				...form,
-				nome: dadosbd[0].nome,
-				sobrenome: dadosbd[0].sobrenome,
-				genero: dadosbd[0].genero,
-				telefone: dadosbd[0].telefone,
-				bairro: dadosbd[0].bairro,
-				cidade: dadosbd[0].cidade,
-				uf: dadosbd[0].uf,
-				escola: atob(dadosbd[0].escola),
-				ano_letivo: atob(dadosbd[0].ano_letivo),
-				tipo_escola: atob(dadosbd[0].tipo_escola),
-				senha: dadosbd[0].senha,
-			});
-			setVerificado(true)
 
+			if(!dadosbd[0].escola && !dadosbd[0].ano_letivo && !dadosbd[0].tipo_escola){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else if(!dadosbd[0].escola && !dadosbd[0].ano_letivo ){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					tipo_escola: atob(dadosbd[0].tipo_escola),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else if (!dadosbd[0].escola){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					ano_letivo: atob(dadosbd[0].ano_letivo),
+					tipo_escola: atob(dadosbd[0].tipo_escola),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else if(!dadosbd[0].ano_letivo){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					escola: atob(dadosbd[0].escola),
+					tipo_escola: atob(dadosbd[0].tipo_escola),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else if(!dadosbd[0].tipo_escola){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					escola: atob(dadosbd[0].escola),
+					ano_letivo: atob(dadosbd[0].ano_letivo),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else if(!dadosbd[0].escola && !dadosbd[0].tipo_escola){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					ano_letivo: atob(dadosbd[0].ano_letivo),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else if(!dadosbd[0].ano_letivo && !dadosbd[0].tipo_escola){
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					escola: atob(dadosbd[0].escola),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}else{
+				setForm({
+					...form,
+					nome: dadosbd[0].nome,
+					sobrenome: dadosbd[0].sobrenome,
+					genero: dadosbd[0].genero,
+					telefone: dadosbd[0].telefone,
+					bairro: dadosbd[0].bairro,
+					cidade: dadosbd[0].cidade,
+					uf: dadosbd[0].uf,
+					escola: atob(dadosbd[0].escola),
+					ano_letivo: atob(dadosbd[0].ano_letivo),
+					tipo_escola: atob(dadosbd[0].tipo_escola),
+					senha: dadosbd[0].senha,
+				});
+				setVerificado(true)
+			}
 		}
 	}
 
