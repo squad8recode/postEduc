@@ -24,22 +24,45 @@ export default function CadastroUsuario() {
 		nome_usuario: '',
 		senha: '',
 	});
+	const [nomeDisponivel, setNomeDisponivel] = useState(false)
 
 	const [validated, setValidated] = useState(false);
 	const field_required = { color: 'red' };
-
+	const history = useHistory();
+	
 	const alteracao = (evento) => {
 		setForm({
 			...form,
 			[evento.target.id]: evento.target.value,
 		});
 	};
+	
 
-	const history = useHistory();
+	async function verificaNomeUsuario( event ){
+		event.preventDefault()
+		//nome_usuario
+		const url = 'http://localhost/php/verificaNomeUsuario.php'
+		const nomeUsuario = event.target.value
+		const header = {
+			method:'POST',
+			body:JSON.stringify(nomeUsuario)
+		}
+		const resposta = await fetch(url, header)
+		const resultado = await resposta.json()
+
+		if(resultado.mensagem === 'nao existe'){
+			setNomeDisponivel(true)
+		}else{
+			setNomeDisponivel(false)
+			setTimeout(() => {alert('Nome de usuario indisponivel')},1500)
+		}
+	}
+
 
 	const Envio = async (evento) => {
 		evento.preventDefault()
 		const forms = evento.currentTarget;
+		
 		if (forms.checkValidity() === false) {
 			evento.preventDefault();
 			evento.stopPropagation();
@@ -47,32 +70,36 @@ export default function CadastroUsuario() {
 
 		setValidated(true);
 
-		if (
-			evento.target.nome.value.length > 0 &&
-			evento.target.sobrenome.value.length > 0 &&
-			evento.target.genero.value.length > 0 &&
-			evento.target.nascimento.value.length > 0 &&
-			evento.target.email.value.length > 0 &&
-			evento.target.bairro.value.length > 0 &&
-			evento.target.cidade.value.length > 0 &&
-			evento.target.uf.value.length > 0 &&
-			evento.target.nome_usuario.value.length > 0 &&
-			evento.target.senha.value.length > 0 &&
-			evento.target.confirmesenha.value.length > 0
-		) {
-			const senhaform = evento.target.senha.value;
-			const confirmesenha = evento.target.confirmesenha.value;
-
-			if (senhaform !== confirmesenha) {
-				alert('Senha não coincide, por favor tentar novamente. ');
-			} else {
-				fetch('http://52.67.245.155/php/cadastrousuario.php', {
-					method: 'POST',
-					body: new FormData(evento.target),
-				});
-				alert('Cadastro realizado com sucesso!');
-				history.push('/Login');
+		if(nomeDisponivel){
+			if (
+				evento.target.nome.value.length > 0 &&
+				evento.target.sobrenome.value.length > 0 &&
+				evento.target.genero.value.length > 0 &&
+				evento.target.nascimento.value.length > 0 &&
+				evento.target.email.value.length > 0 &&
+				evento.target.bairro.value.length > 0 &&
+				evento.target.cidade.value.length > 0 &&
+				evento.target.uf.value.length > 0 &&
+				evento.target.nome_usuario.value.length > 0 &&
+				evento.target.senha.value.length > 0 &&
+				evento.target.confirmesenha.value.length > 0
+			) {
+				const senhaform = evento.target.senha.value;
+				const confirmesenha = evento.target.confirmesenha.value;
+	
+				if (senhaform !== confirmesenha) {
+					alert('Senha não coincide, por favor tentar novamente. ');
+				} else {
+					fetch('http://52.67.245.155/php/cadastrousuario.php', {
+						method: 'POST',
+						body: new FormData(evento.target),
+					});
+					alert('Cadastro realizado com sucesso!');
+					history.push('/Login');
+				}
 			}
+		}else{
+			alert('Por favor escolha um novo nome de usuario')
 		}
 	};
 
@@ -81,7 +108,7 @@ export default function CadastroUsuario() {
 				<h3>Olá! Faça aqui seu Cadastro</h3>
 				<br />
 
-				<Form noValidate validated={validated} onSubmit={Envio}>
+				<Form noValidate validated={validated} id='formsa' onSubmit={Envio}>
 					<Col sm={12} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }}>
 						<Form.Group>
 							<Form.Label>
@@ -299,7 +326,7 @@ export default function CadastroUsuario() {
 							</Form.Label>
 							<Form.Control
 								required
-								onChange={alteracao}
+								onChange={ verificaNomeUsuario }
 								type='text'
 								id='nome_usuario'
 								name='nome_usuario'
