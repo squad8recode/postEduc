@@ -27,6 +27,8 @@ export default class EditaOnline extends React.Component {
 			carga_horaria: this.props.carga_horaria,
 			telefone: this.props.telefone,
 			valor: 'imagem',
+			category:[]
+
 		};
 
 		this.editarEvento = this.editarEvento.bind(this);
@@ -115,6 +117,13 @@ export default class EditaOnline extends React.Component {
 		this.setState({ redirect: true });
 	}
 
+	async componentDidMount (){
+		const url = 'http://52.67.245.155/php/TodasCategorias.php'
+		const resposta = await fetch(url)
+		const resultado = await resposta.json()
+		this.setState({category:resultado})
+	}
+
 	render() {
 		let now = new Date();
 		let ano = now.getFullYear();
@@ -188,15 +197,10 @@ export default class EditaOnline extends React.Component {
 								<Form.Group>
 									<Form.Label>Categoria do evento: </Form.Label>
 									<Form.Control as='select' name='categoria' custom>
-										<option value='vazio'> </option>
-										<option value='exatas'>Exatas</option>
-										<option value='musica'>Musica</option>
-										<option value='idiomas'>Idiomas</option>
-										<option value='jogos'>Jogos</option>
-										<option value='desenho'>Desenho</option>
-										<option value='palestra'>Palestra</option>
-										<option value='esporte'>Esporte</option>
-										<option value='outros'>Outros</option>
+										<option value=''> </option>
+										{ this.state.category && this.state.category.map( item => (
+											<option key={ item.id_categoria } value={ item.id_categoria }>{ item.nome_categoria }</option>
+										)) }
 									</Form.Control>
 								</Form.Group>
 							</Col>
