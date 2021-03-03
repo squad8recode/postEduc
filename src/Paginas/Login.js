@@ -48,7 +48,7 @@ class Login extends React.Component {
 	async Envio(evento) {
 		evento.preventDefault();
 
-		const url = 'http://52.67.245.155/php/login.php';
+		const url = 'https://servidorposteduc.ddns.net/login.php';
 		const dados = new FormData(evento.target);
 		const cabecalho = {
 			method: 'POST',

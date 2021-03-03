@@ -16,7 +16,7 @@ export default class Averificar extends React.Component{
   
   async darCertificacao(event){
     event.preventDefault()
-    const url = "http://52.67.245.155/php/verificado.php"
+    const url = "https://servidorposteduc.ddns.net/verificado.php"
     const dados = new FormData(event.target)
     const cabecalho = {
       method:"POST",
@@ -35,7 +35,7 @@ export default class Averificar extends React.Component{
       <Card className="mt-5 mb-5" style={css}>
         <Card.Body>
           <Card.Title>{this.props.modalidade}</Card.Title>
-            <Card.Img variant="top" src={`http://52.67.245.155/php/img/${this.props.imagem}`} height="100px"/>
+            <Card.Img variant="top" src={`https://servidorposteduc.ddns.net/img/${this.props.imagem}`} height="100px"/>
             <Card.Title className="mt-2"> {this.props.nome_evento}</Card.Title>
               <p>postado em: {this.props.data_postagem}</p>
             <Row className="mt-2">

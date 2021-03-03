@@ -39,7 +39,7 @@ function EditarUsuario(props) {
 	
 	const verificacao = async ( event ) => {
 		event.preventDefault()
-		const url = 'http://52.67.245.155/php/VerificaUsuario.php'
+		const url = 'https://servidorposteduc.ddns.net/VerificaUsuario.php'
 		const dados = {
 			'id_usuario':novoId,
 			'senha':event.target.senha.value
@@ -218,7 +218,7 @@ function EditarUsuario(props) {
 			if (senhaform !== confirmesenha) {
 				alert('Senha não coincide, por favor tentar novamente. ');
 			} else {
-				fetch('http://52.67.245.155/php/EditarUsuario.php', {
+				fetch('https://servidorposteduc.ddns.net/EditarUsuario.php', {
 					method: 'POST',
 					body: new FormData(evento.target),
 				});

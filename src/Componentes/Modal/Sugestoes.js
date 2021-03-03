@@ -25,7 +25,7 @@ class Sugestoes extends React.Component {
 
 	async enviarSugestao(event){
 		event.preventDefault()
-		const url = "http://52.67.245.155/php/sugestoes.php"
+		const url = "https://servidorposteduc.ddns.net/sugestoes.php"
 		const dados = new FormData(event.target)
 		const cabecalho = {
 		  method:"POST",

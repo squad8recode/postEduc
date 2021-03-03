@@ -24,7 +24,7 @@ export default class InfosEvento extends React.Component {
                 
                 <Col xs={12} sm={12} md={12} lg={12} >
                     <img
-                        src={`http://52.67.245.155/php/img/${this.props.imagem}`}
+                        src={`https://servidorposteduc.ddns.net/img/${this.props.imagem}`}
                         alt='imagem'
                         title='titulo'
                         width='100%'
