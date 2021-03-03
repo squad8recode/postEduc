@@ -106,7 +106,7 @@ export default class EditaSemi extends React.Component{
 
   async editarEvento(event){
     event.preventDefault()
-    const url = "http://52.67.245.155/php/atualizaevento.php"
+    const url = "https://servidorposteduc.ddns.net/atualizaevento.php"
     const dados = new FormData(event.target)
     const cabecalho = {
       method:"POST",
@@ -131,7 +131,7 @@ export default class EditaSemi extends React.Component{
     }
   }
   async componentDidMount (){
-		const url = 'http://52.67.245.155/php/TodasCategorias.php'
+		const url = 'https://servidorposteduc.ddns.net/TodasCategorias.php'
 		const resposta = await fetch(url)
 		const resultado = await resposta.json()
 		this.setState({category:resultado})

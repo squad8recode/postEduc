@@ -16,7 +16,7 @@ export default class TodosEventos extends React.Component{
   }
 
   componentDidMount(){
-    fetch(`http://52.67.245.155/php/selevento.php?`)
+    fetch(`https://servidorposteduc.ddns.net/selevento.php`)
     .then( response => response.json())
     .then(responseJson => this.setState({'eventos': responseJson}));
   }

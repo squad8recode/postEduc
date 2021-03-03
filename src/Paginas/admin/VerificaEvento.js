@@ -19,7 +19,7 @@ class VerificaEvento extends React.Component{
   }
 
   componentDidMount(){
-    fetch('http://52.67.245.155/php/verifica.php')
+    fetch('https://servidorposteduc.ddns.net/verifica.php')
     .then(resposta => resposta.json())
     .then(resposta => this.setState({'eventos':resposta}))
   }

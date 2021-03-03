@@ -55,7 +55,7 @@ class SemiPresencial extends React.Component {
 			event.target.comple.value.length > 0 &&
 			event.target.descricao.value.length > 0
 		) {
-			const url = 'http://52.67.245.155/php/cadaseven.php';
+			const url = 'https://servidorposteduc.ddns.net/cadaseven.php';
 			const dados = new FormData(event.target);
 			const cabecalho = {
 				method: 'POST',
@@ -84,7 +84,7 @@ class SemiPresencial extends React.Component {
 	}
 
 	async componentDidMount (){
-		const url = 'http://52.67.245.155/php/TodasCategorias.php'
+		const url = 'https://servidorposteduc.ddns.net/TodasCategorias.php'
 		const resposta = await fetch(url)
 		const resultado = await resposta.json()
 		this.setState({categoria:resultado})
