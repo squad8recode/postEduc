@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 
 import { Card, Button, Col, Row } from 'react-bootstrap'
 
+import './minievento.css'
+
 export default class Minievento extends React.Component{
   render(){
     const css = {

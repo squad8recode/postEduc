@@ -3,7 +3,6 @@ import React from 'react'
 import '../css/index.css'
 
 import BgImagem from '../Img/mesa-estudos.jpg'
-import BgImagem2 from '../Img/matematica-estudos.jpg'
 
 class Sobre extends React.Component {   
 
@@ -29,12 +28,6 @@ class Sobre extends React.Component {
                         horizonte e possibilidades para seu desenvolvimento pessoal,
                         educacional, profissional e cidadão por meio do conhecimento
                         e engajamento em atividades extraclasse e extracurriculares.
-                    </p>
-                </div>
-
-                <div className="bgImagem" style={{ backgroundImage: `url(${BgImagem2})` }}>
-                    {/* <h1 className="sobreObjetivo py-3"></h1> */}
-                    <p className="sobreObjetivo py-3">
                     </p>
                 </div>
                 

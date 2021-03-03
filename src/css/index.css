@@ -66,11 +66,13 @@ p{
 .benef{
   background-color: #8650b3 ;
   color:white;
+  border-radius: 5px;
 }
 
 .categ{
   background-color: #0068c8 ;
   color:white;
+  border-radius: 5px;
 }
 
 .informacoes{
