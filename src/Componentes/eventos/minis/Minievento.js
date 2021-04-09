@@ -15,7 +15,7 @@ export default class Minievento extends React.Component{
       <div className='col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center' >
         <Card className="card h my-2 mr-3 ml-3" style={css}>
         <Card.Title  >{this.props.modalidade}</Card.Title>
-          <Card.Img variant="top" src={`https://servidorposteduc.ddns.net/img/${this.props.imagem}`} width="250" height="160" />
+          <Card.Img variant="top" src={`https://sarcastic-punch.000webhostapp.com/php/img/${this.props.imagem}`} width="250" height="160" />
             <Row>
               <Card.Body as={Row}>
                 <Card.Title as={Col}>{this.props.nome}</Card.Title>

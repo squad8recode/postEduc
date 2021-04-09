@@ -41,7 +41,7 @@ export default function CadastroUsuario() {
 	async function verificaNomeUsuario( event ){
 		event.preventDefault()
 		//nome_usuario
-		const url = 'https://servidorposteduc.ddns.net/verificaNomeUsuario.php'
+		const url = 'https://sarcastic-punch.000webhostapp.com/php/verificaNomeUsuario.php'
 		const nomeUsuario = event.target.value
 		const header = {
 			method:'POST',
@@ -90,7 +90,7 @@ export default function CadastroUsuario() {
 				if (senhaform !== confirmesenha) {
 					alert('Senha não coincide, por favor tentar novamente. ');
 				} else {
-					fetch('https://servidorposteduc.ddns.net/cadastrousuario.php', {
+					fetch('https://sarcastic-punch.000webhostapp.com/php/cadastrousuario.php', {
 						method: 'POST',
 						body: new FormData(evento.target),
 					});

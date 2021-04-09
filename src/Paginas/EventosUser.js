@@ -17,7 +17,7 @@ class EventosUser extends React.Component{
 
   componentDidMount(){
     const { novoId } = this.props
-    fetch(`https://servidorposteduc.ddns.net/eventoUser.php?id=${novoId}`)
+    fetch(`https://sarcastic-punch.000webhostapp.com/php/eventoUser.php?id=${novoId}`)
     .then(resp => resp.json())
     .then(resp => this.setState({'eventUser':resp}))
 

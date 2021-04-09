@@ -31,7 +31,7 @@ class Edicao extends React.Component {
 
 	async componentDidMount() {
 		const url = await fetch(
-			`https://servidorposteduc.ddns.net/select.php?id=${this.props.match.params.id}`
+			`https://sarcastic-punch.000webhostapp.com/php/select.php?id=${this.props.match.params.id}`
 		);
 		const resposta = await url.json();
 

@@ -14,7 +14,7 @@ class Denuncias extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch('https://servidorposteduc.ddns.net/infodenuncia.php')
+		fetch('https://sarcastic-punch.000webhostapp.com/php/infodenuncia.php')
 			.then((resposta) => resposta.json())
 			.then((resposta) => this.setState({ denuncias: resposta }));
 	}

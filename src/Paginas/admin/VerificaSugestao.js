@@ -15,7 +15,7 @@ class VerificaSugestao extends React.Component{
   }
 
   componentDidMount(){
-    fetch('https://servidorposteduc.ddns.net/selectsugestoes.php')
+    fetch('https://sarcastic-punch.000webhostapp.com/php/selectsugestoes.php')
     .then(resposta => resposta.json())
     .then(resposta => this.setState({'sugestoes':resposta}))
   }
