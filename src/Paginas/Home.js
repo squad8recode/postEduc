@@ -16,7 +16,7 @@ export default class PaginaDeEvento extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch('https://servidorposteduc.ddns.net/carrousel.php')
+		fetch('https://sarcastic-punch.000webhostapp.com/php/carrousel.php')
 			.then((response) => response.json())
 			.then((responseJson) => this.setState({ db: responseJson }));
 	}

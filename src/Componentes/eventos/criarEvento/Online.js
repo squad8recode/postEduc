@@ -43,7 +43,7 @@ class Online extends React.Component {
 			event.target.data_evento.value.length > 0 &&
 			event.target.lin.value.length > 0 &&
 			event.target.descricao.value.length > 0 ){
-			const url = 'https://servidorposteduc.ddns.net/cadaseven.php';
+			const url = 'https://sarcastic-punch.000webhostapp.com/php/cadaseven.php';
 				const dados = new FormData(event.target);
 				const cabecalho = {
 					method: 'POST',
@@ -62,7 +62,7 @@ class Online extends React.Component {
 	}
 
 	async componentDidMount (){
-		const url = 'https://servidorposteduc.ddns.net/TodasCategorias.php'
+		const url = 'https://sarcastic-punch.000webhostapp.com/php/TodasCategorias.php'
 		const resposta = await fetch(url)
 		const resultado = await resposta.json()
 		this.setState({categoria:resultado})

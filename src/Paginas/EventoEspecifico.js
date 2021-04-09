@@ -18,7 +18,7 @@ export default class EventoEspecifico extends React.Component{
 
 
   componentDidMount(){
-    fetch(`https://servidorposteduc.ddns.net/select.php?id=${this.props.match.params.id}`)
+    fetch(`https://sarcastic-punch.000webhostapp.com/php/select.php?id=${this.props.match.params.id}`)
     .then( response => response.json())
     .then(responseJson => this.setState({'db': responseJson}));
 

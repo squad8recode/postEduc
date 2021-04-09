@@ -11,7 +11,7 @@ export default function Deletar(props) {
 
   const delets = async (event) => {
     event.preventDefault()
-    const url = 'https://servidorposteduc.ddns.net/deletar.php'
+    const url = 'https://sarcastic-punch.000webhostapp.com/php/deletar.php'
     const dados = new FormData(event.target)
 
     const cabecalho = {

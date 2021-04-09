@@ -106,7 +106,7 @@ export default class EditaPresencial extends React.Component {
 
 	async editarEvento(event) {
 		event.preventDefault();
-		const url = 'https://servidorposteduc.ddns.net/atualizaevento.php';
+		const url = 'https://sarcastic-punch.000webhostapp.com/php/atualizaevento.php';
 		const dados = new FormData(event.target);
 		const cabecalho = {
 			method: 'POST',
@@ -129,7 +129,7 @@ export default class EditaPresencial extends React.Component {
 		}
 	}
 	async componentDidMount (){
-		const url = 'https://servidorposteduc.ddns.net/TodasCategorias.php'
+		const url = 'https://sarcastic-punch.000webhostapp.com/php/TodasCategorias.php'
 		const resposta = await fetch(url)
 		const resultado = await resposta.json()
 		this.setState({category:resultado})

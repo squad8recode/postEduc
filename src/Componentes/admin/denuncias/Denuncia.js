@@ -12,7 +12,7 @@ export default class Denuncia extends React.Component{
   async Deletar(event){
     event.preventDefault()
 
-    const url = 'https://servidorposteduc.ddns.net/deletar.php'
+    const url = 'https://sarcastic-punch.000webhostapp.com/php/deletar.php'
     const dados = new FormData(event.target)
 
     const cabecalho = {
